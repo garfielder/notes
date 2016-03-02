@@ -23,3 +23,8 @@
 | update workspace |  p4 sync | git pull |  git would update both local repo and work copy|
 | update a file or files | p4 sync file/files| no single command | |
 |edit a file | p4 edit file/files | git comment -a -m "message" | git detectes modified files |
+|submit  to remove depot| p4 submit | git push -u origin master| |
+
+## Kernel
+
+**dump_strack()** : dump current callback stack

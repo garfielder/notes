@@ -25,3 +25,20 @@
 ```
 方法2：
     use `List.index(x)` , 但是当x不存在时会触发异常
+
+### Type basics
+
+``` python
+    a = [1, 2 , 3]
+    a = 0
+```
+Once the last reference is removed, the object is deleted, which is some kinds of garbage recollection mechnasim
+
+Basic types are digit, string, list, tupple, dict, file
+
+new type: set/NOne, boolean.  NOTICE, set operation may be useful sometime.
+
+### Get Help
+dir(obj) # return all priorities of obj
+dir(obj.priority) # find out spec of a function
+
