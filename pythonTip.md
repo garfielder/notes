@@ -39,6 +39,6 @@ Basic types are digit, string, list, tupple, dict, file
 new type: set/NOne, boolean.  NOTICE, set operation may be useful sometime.
 
 ### Get Help
-dir(obj) # return all priorities of obj
-dir(obj.priority) # find out spec of a function
+dir(obj) # return all priorities of obj <br>
+help(obj.priority) # find out spec of a function <br>
 
