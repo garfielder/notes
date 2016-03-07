@@ -29,6 +29,16 @@
 
 **dump_strack()** : dump current callback stack
 
+### Debug kernel
+Two VM on same windows host:  http://www.server110.com/virtualbox/201402/6136.html <br>
+
+English one: http://opensourceforu.efytimes.com/2011/03/kgdb-with-virtualbox-debug-live-kernel/ <br>
+
+
+VirtualBox in Linux, target machine in vbox
+http://blog.chinaunix.net/uid-27661220-id-3323015.html
+
+
 ## Bootup
 
  *   grub.cfg determines the menu entry 
