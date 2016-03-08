@@ -38,6 +38,8 @@ English one: http://opensourceforu.efytimes.com/2011/03/kgdb-with-virtualbox-deb
 VirtualBox in Linux, target machine in vbox
 http://blog.chinaunix.net/uid-27661220-id-3323015.html
 
+Resize ubuntu disk
+http://www.howtogeek.com/114503/how-to-resize-your-ubuntu-partitions/
 
 ## Bootup
 
