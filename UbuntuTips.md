@@ -53,5 +53,14 @@ http://www.howtogeek.com/114503/how-to-resize-your-ubuntu-partitions/
 By default , an executable  records abosolute path of source files. If executable+soures are moved to a new location,   GDB cannot find the source files.
 
 Two ways to fix: <br>
-1. set substitute-path <src-path>  <dst-path>
-2. dir <new_directory_that_soruce_files_are_located>  ; this adds the path into gdb source directories 
+1. set substitute-path  src-path    dst-path   <br>
+2. dir  new_directory_that_soruce_files_are_located   ; this adds the path into gdb source directories 
+
+
+ 
+## Copy files
+### rsync
+used to sync files between servers, better than ftp <br>
+
+general usage:  <br>
+rsycn -vzrL  uname@server:\<src_path\> \<dst_path\>
