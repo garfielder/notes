@@ -66,6 +66,6 @@ general usage:  <br>
 rsycn -vzrL  uname@server:\<src_path\> \<dst_path\>
 
 -v : verbose <br>
--z : compressed transfer
--r : recursive including all sub-directories
--L : copy links as files
+-z : compressed transfer <br>
+-r : recursive including all sub-directories <br>
+-L : copy links as files <br>
