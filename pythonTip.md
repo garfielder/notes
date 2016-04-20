@@ -56,10 +56,12 @@ convert from string to number : `eval('100'), eval("0x40")` <br>
 ```python
 	a = 3;
 ```
-Three steps to meet above requirement: <br>
-1. create an object to stand for 3
-2. create a variable 'a' if it is not there
-3. map variable 'a' and object 3. 
+Three steps to meet above requirement:  
+
+1.  Create an object to stand for 3
+2.  Create a variable 'a' if it is not there
+3.  Map variable 'a' and object 3. 
+
 
 So, <br>
 *  Variable is symbolic element in sysmem table 
