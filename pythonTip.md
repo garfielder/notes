@@ -51,3 +51,18 @@ hex literal starts with '0x' <br>
 convert from decimal to hex : ` hex(64)` ,  <br>
 convert from string to number : `eval('100'), eval("0x40")` <br>
 
+### variable/object/reference
+
+```python
+	a = 3;
+```
+Three steps to meet above requirement: <br>
+1. create an object to stand for 3
+2. create a variable 'a' if it is not there
+3. map variable 'a' and object 3. 
+
+So, <br>
+*  Variable is symbolic element in sysmem table 
+*  object is a memory space in memory, which is big enough to hold its data.  *type* belongs to object rather than variable
+*  Reference is a pointer from variable to object.
+ 
