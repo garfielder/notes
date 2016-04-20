@@ -42,3 +42,11 @@ new type: set/NOne, boolean.  NOTICE, set operation may be useful sometime.
 dir(obj) # return all priorities of obj <br>
 help(obj.priority) # find out spec of a function <br>
 
+### Number
+octal literal starts with '0' <br>
+hex literal starts with '0x' <br>
+
+
+convert from decimal to hex : ` hex(64)` , 
+convert from string to number : `eval('100'), eval("0x40")`
+
