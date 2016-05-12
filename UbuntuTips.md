@@ -73,7 +73,7 @@ rsycn -vzrL  uname@server:\<src_path\> \<dst_path\>
 ### chmod
 
 If a folder is copied from other location, you may met problems like "cannot chdir from <cur_dir> to <dst_dir> : Permission denied. Please use this commnd to fix: <br>
-
+```tcsh
 chmod -R 755 <folder_name>; #  -R is for recursive, 755 provides enough peviledge to access the folder
-
+```
 
