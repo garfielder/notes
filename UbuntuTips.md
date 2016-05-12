@@ -58,7 +58,7 @@ Two ways to fix: <br>
 
 
  
-## Copy files
+## Regular commands
 ### rsync
 used to sync files between servers, better than ftp <br>
 
@@ -69,3 +69,11 @@ rsycn -vzrL  uname@server:\<src_path\> \<dst_path\>
 -z : compressed transfer <br>
 -r : recursive including all sub-directories <br>
 -L : copy links as files <br>
+
+### chmod
+
+If a folder is copied from other location, you may met problems like "cannot chdir from <cur_dir> to <dst_dir> : Permission denied. Please use this commnd to fix: <br>
+
+chmod -R 755 <folder_name>; #  -R is for recursive, 755 provides enough peviledge to access the folder
+
+
