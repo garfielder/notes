@@ -76,4 +76,10 @@ If a folder is copied from other location, you may met problems like "cannot chd
 ```tcsh
 chmod -R 755 <folder_name>; #  -R is for recursive, 755 provides enough peviledge to access the folder
 ```
+## GVIM
+### replacement
 
+```tcsh
+:%s/src_string/dst_string/g  # '/' is used as delimiter 
+:%s#src_string#dst_string/g  # '#' is used as delimiter 
+```
