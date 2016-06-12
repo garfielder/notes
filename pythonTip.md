@@ -68,3 +68,15 @@ So, <br>
 *  object is a memory space in memory, which is big enough to hold its data.  *type* belongs to object rather than variable
 *  Reference is a pointer from variable to object.
  
+### String Tips
+From learning python
+
+*   单引号
+*   双引号
+*   通过raw抑制转义
+   *   常用于表示windows路径和正则表达式
+   *   open("c:\\new\\text.dat", "w")  Vs  open(r"c:\new\text.dat", "w")
+*    三重引号
+   *   文档字符串
+   *   注释代码的好方法
+   *   可以在前面加上raw抑制转义
