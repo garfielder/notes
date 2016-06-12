@@ -71,12 +71,16 @@ So, <br>
 ### String Tips
 From learning python
 
-*   单引号
-*   双引号
-*   通过raw抑制转义
-   *   常用于表示windows路径和正则表达式
-   *   open("c:\\new\\text.dat", "w")  Vs  open(r"c:\new\text.dat", "w")
-*    三重引号
-   *   文档字符串
-   *   注释代码的好方法
-   *   可以在前面加上raw抑制转义
+* 字符串表示
+	*   单引号
+	*   双引号
+	*   通过raw抑制转义
+	   *   常用于表示windows路径和正则表达式
+	   *   open("c:\\new\\text.dat", "w")  Vs  open(r"c:\new\text.dat", "w")
+	*    三重引号
+	   *   文档字符串
+	   *   注释代码的好方法
+	   *   可以在前面加上raw抑制转义
+* 分片
+   *  str[i:j]
+   *  str[i:j:k]  # 从i 到j-1 每隔k个进行索引
