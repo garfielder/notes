@@ -76,6 +76,9 @@ If a folder is copied from other location, you may met problems like "cannot chd
 ```tcsh
 chmod -R 755 <folder_name>; #  -R is for recursive, 755 provides enough peviledge to access the folder
 ```
+### zcat 
+view .gz file without gunzip
+
 ## GVIM
 ### replacement
 
