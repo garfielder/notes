@@ -66,7 +66,7 @@ Three steps to meet above requirement:
 So, <br>
 *  Variable is symbolic element in sysmem table 
 *  object is a memory space in memory, which is big enough to hold its data.  *type* belongs to object rather than variable
-*  Reference is a pointer from variable to object.
+*  Reference is a pointer from variable to object, can be used for object serialization , but the best one is pickle.
  
 ### String Tips
 From learning python
