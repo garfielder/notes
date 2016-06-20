@@ -84,6 +84,9 @@ From learning python
 * 分片
    *  str[i:j]
    *  str[i:j:k]  # 从i 到j-1 每隔k个进行索引
+* method
+   * rstrip: remove tariling whitespace. ususlly for end-of-line
+   * eval(string): convert string into executable. Convert string into python code.
 
 ### Dict
 `list` is a collection of other objects in a given order, while `dict` is a collection of other objects with no order. Elements in `dict` is referred by key rather than offset.
