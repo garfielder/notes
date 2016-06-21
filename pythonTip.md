@@ -67,7 +67,9 @@ So, <br>
 *  Variable is symbolic element in sysmem table 
 *  object is a memory space in memory, which is big enough to hold its data.  *type* belongs to object rather than variable
 *  Reference is a pointer from variable to object, can be used for object serialization , but the best one is pickle.
- 
+
+All assignment is passing reference of object rather than cloning. There a few ways to clone list, Dict. List[:], Dict.clone(), list(list)
+
 ### String Tips
 From learning python
 
