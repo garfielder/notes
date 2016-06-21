@@ -6,7 +6,7 @@
 * Constant member
    * Not allow to change non-static members
       * can change mutual class member ( page 23 of [1])
-      
+* const and non-constant can be overloaded     
       
 
 ## Reference
