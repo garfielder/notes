@@ -70,6 +70,9 @@ So, <br>
 
 All assignment is passing reference of object rather than cloning. There a few ways to clone list, Dict. List[:], Dict.clone(), list(list)
 
+a `is` b : a and b refers to the same object  <br>
+a `==` b:  a equal b , compare member to member <br>
+
 ### String Tips
 From learning python
 
