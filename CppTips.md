@@ -8,6 +8,8 @@
       * can change mutual class member ( page 23 of [1])
 * const and non-constant can be overloaded     
       
-
+## Initialization 
+* Initialize a class in initialization list, so it can be done before construcor
+* There is no guratee of initialization sequence of objects in difference compilization unit (different .o or .obj file)
 ## Reference
 [1]: Effective C++
