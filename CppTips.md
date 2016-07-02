@@ -13,3 +13,10 @@
 * There is no guratee of initialization sequence of objects in difference compilization unit (different .o or .obj file)
 ## Reference
 [1]: Effective C++
+
+##
+### STL
+* iterator
+    * It is similar to pointer, which is pointing an objects, can be dereferernced, increase, decresed, comparasion, ...
+    * Different type of iterators have different level of functionlity. See [here](http://www.cplusplus.com/reference/iterator/)
+    * 
