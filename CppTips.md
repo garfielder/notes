@@ -29,3 +29,7 @@
         * derived from iterator
         * it points to an item that is supposed to be output.
         * It is a new form of using ```cin```, ```cout```, which works well with ATL container.
+* boost::any
+   * Represent data of any type
+      *  ``` boost::any anyType;  anyType = 18;     cout << any_cast<int>(anytype) << endl;
+      *  expection bad_any_cast returns with any_cast failure
