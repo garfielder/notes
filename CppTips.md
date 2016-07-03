@@ -24,6 +24,7 @@
     * Stream are something that help searilize objects(int,string...) into strings 
     * Stream are abastration of a a device on which input and output are performed. [link](http://www.cplusplus.com/reference/iolibrary/) 
     * cin/cout are pre-defined ojbect of stream type. ```cout << "li" << "yong"``` is equal to ((cout<< "li") << "yong").  each bracket returns the reference to cout itself.
+       * ```cout``` is defined as ```extern ostream cout```  , so it must implemented somewhere 
     * ostream_iterator
         * derived from iterator
         * it points to an item that is supposed to be output.
