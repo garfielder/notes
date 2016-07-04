@@ -11,6 +11,12 @@
 ## Initialization 
 * Initialize a class in initialization list, so it can be done before construcor
 * There is no guratee of initialization sequence of objects in difference compilization unit (different .o or .obj file)
+##  Constructor 
+* C++ compiler create default constuctor/copy constructor/copy assignment/descructord 
+* Sometime need to stop above default member from being called by setting private and not implemented(stop friend class)
+* desctructor should be virutal if a class have virutal members, other wise, delelte the point would only release the base class part.  If no virutal member , it is not supposed to be a base class
+
+
 ## Reference
 [1]: Effective C++
 
