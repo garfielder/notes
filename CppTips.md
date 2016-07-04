@@ -33,3 +33,7 @@
    * Represent data of any type
       *  ``` boost::any anyType;  anyType = 18;     cout << any_cast<int>(anytype) << endl;```
       *  expection bad_any_cast returns with any_cast failure
+* unordered_set
+   * It stores elements not in a particular order, but according to their value. The value itself is its key.
+   * They are stored in one of the bullets index by the hash value of their
+   * Compared with vector,  it is faster to acess one element, but slow to loop though a range. 
