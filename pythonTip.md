@@ -96,9 +96,12 @@ From learning python
 ### Dict
 `list` is a collection of other objects in a given order, while `dict` is a collection of other objects with no order. Elements in `dict` is referred by key rather than offset.
 
-```zip``` can be used to construct dict
+### Iterator
+* ```zip``` can be used to construct dict
 ```pythobn
 key = ['a', 'b']
 value = [9, 10]
 d = dict(zip(key, value))
 ```
+
+* enumerate can disintegrate an list into list of （index， data）tupple
