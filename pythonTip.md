@@ -1,6 +1,10 @@
 ## Advanced usage of List
 
-### construct a new list based on existing one:
+###  List comprehension 
+It comes from concept of set operation in mathmatic.  such as {x * 2 | x in N, x % 2 == 0} <br>
+construct a new list based on existing one.<br>
+An elegant to create new list. also availabe in c++ STL algorithm library. 
+
 
 ```python
 >>> listN = [1, 3, 5]
