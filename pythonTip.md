@@ -30,7 +30,7 @@ An elegant to create new list. also availabe in c++ STL algorithm library.
 方法2：
     use `List.index(x)` , 但是当x不存在时会触发异常
 
-### Type basics
+## Type basics
 
 ``` python
     a = [1, 2 , 3]
@@ -100,7 +100,7 @@ From learning python
 ### Dict
 `list` is a collection of other objects in a given order, while `dict` is a collection of other objects with no order. Elements in `dict` is referred by key rather than offset.
 
-### Iterator
+## Iterator
 * ```zip``` can be used to construct dict
 ```pythobn
 key = ['a', 'b']
@@ -109,3 +109,7 @@ d = dict(zip(key, value))
 ```
 
 * enumerate can disintegrate an list into list of （index， data）tupple
+## Function 
+### difference with C
+def is an executable sentence , like ``` a = "lyq" ```,  ```def``` create a function object and assign to  the function name.  function name is a reference to the function object.
+
