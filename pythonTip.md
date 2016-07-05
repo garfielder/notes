@@ -109,6 +109,8 @@ d = dict(zip(key, value))
 ```
 
 * enumerate can disintegrate an list into list of （index， data）tupple
+
+
 ## Function 
 ### difference with C
 def is an executable sentence , like ``` a = "lyq" ```,  ```def``` create a function object and assign to  the function name.  function name is a reference to the function object.
