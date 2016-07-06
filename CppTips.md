@@ -67,3 +67,31 @@ int main( void )
    * count_if: return the number of object.  count_if(input_iterator inputBeginItr, input_iterator endItr, cbPredicate)
    * find_if: 
    * copy_if: c++11
+
+## C 
+### Function pointer 
+```c
+#include <stdio.h>
+
+void f1() { printf("in f1\n"); }
+void f2() { printf("in f2\n"); }
+
+typedef void (*PFUN)();
+
+int main()
+{
+    /* it defines a variable with type of 
+     * function pointer
+     * similar to `int* pInt`
+     */
+    void (*pf)();
+    pf = f1;
+    pf();
+
+    // use funtion pointer type
+    PFUN pf2;
+    pf2 = f2;
+    pf2();
+}
+
+```
