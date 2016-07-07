@@ -74,9 +74,7 @@ int main( void )
 #include <boost/bind.hpp>
 #include <iostream>
 
-
 using namespace std;
-using boost::shared_ptr;
 
 class Foo {
 public:
