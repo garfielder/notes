@@ -67,7 +67,60 @@ int main( void )
    * count_if: return the number of object.  count_if(input_iterator inputBeginItr, input_iterator endItr, cbPredicate)
    * find_if: 
    * copy_if: c++11
+* ```boost::function and boost::bind```
+   * ```boost::function``` can be used to write a generic function pointer including pointing to member function, while ```boost::bind``` is used to create such a generic function pointer
+   ```c++
+#include <boost/shared_ptr.hpp>
+#include <boost/function.hpp>
+#include <boost/bind.hpp>
+#include <iostream>
 
+
+using namespace std;
+using boost::shared_ptr;
+
+class MyClass {
+public:
+    MyClass(){/*cout << "in constructor" << endl;*/}
+    ~MyClass(){/*cout << "in destructor" << endl;*/}
+
+    void  Bark() { cout << " Wang, wang " << endl;}
+    virtual void  Bark2(std::string msg) { cout << "wang: " << msg << endl; }
+private: 
+};
+
+class Child : public MyClass {
+public: 
+    virtual void Bark2(std::string msg) { cout << "Miao: " << msg << endl; } 
+
+};
+
+
+void Bark2(std::string msg)
+{
+    cout << " QiuQiu:  " << msg << endl;
+}
+
+int main()
+{
+    shared_ptr<MyClass> sp2 (new MyClass);
+    sp2->Bark2("lyq");
+
+    MyClass foo;
+
+    boost::function<void(string)> f1, f2, f3;
+
+    Child* pFoo = new Child();
+
+    f1 = boost::bind(&MyClass::Bark2, &foo, _1);
+    f2 = boost::bind(&MyClass::Bark2, pFoo, _1);
+    f3 = boost::bind(&Bark2, _1);
+    f1("can see see me");
+    f2("can see see me");
+    f3("can see see me");
+}
+
+   ```
 ## C 
 ### Function pointer 
 ```c
