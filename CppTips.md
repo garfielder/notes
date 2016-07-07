@@ -16,6 +16,8 @@
 * Sometime need to stop above default member from being called by setting private and not implemented(stop friend class)
 * desctructor should be virutal if a class have virutal members, other wise, delelte the point would only release the base class part.  If no virutal member , it is not supposed to be a base class
 
+## Not to call virutal function in constructor
+设想班级管理系统中有学生和班干部类，班干部类派生于学生类。 有一虚函数名为报告身份。 构造班干部时，要先构造学生，换句话，若当干部，先当学生。当学生的过程中，他报告身份，依然是学生，他不知道自己未来变成干部
 
 ## Reference
 [1]: Effective C++
