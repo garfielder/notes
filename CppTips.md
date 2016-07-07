@@ -70,7 +70,6 @@ int main( void )
 * ```boost::function and boost::bind```
    * ```boost::function``` can be used to write a generic function pointer including pointing to member function, while ```boost::bind``` is used to create such a generic function pointer
    ```c++
-#include <boost/shared_ptr.hpp>
 #include <boost/function.hpp>
 #include <boost/bind.hpp>
 #include <iostream>
@@ -79,72 +78,39 @@ int main( void )
 using namespace std;
 using boost::shared_ptr;
 
-class MyClass {
+class Foo {
 public:
-    MyClass(){/*cout << "in constructor" << endl;*/}
-    ~MyClass(){/*cout << "in destructor" << endl;*/}
-
-    void  Bark() { cout << " Wang, wang " << endl;}
+    Foo(){}
+    virtual ~Foo(){}
     virtual void  Bark2(std::string msg) { cout << "wang: " << msg << endl; }
 private: 
 };
 
-class Child : public MyClass {
+class Child : public Foo {
 public: 
     virtual void Bark2(std::string msg) { cout << "Miao: " << msg << endl; } 
 
 };
 
-
 void Bark2(std::string msg)
 {
-    cout << " QiuQiu:  " << msg << endl;
+    cout << "QiuQiu:  " << msg << endl;
 }
 
 int main()
 {
-    shared_ptr<MyClass> sp2 (new MyClass);
-    sp2->Bark2("lyq");
-
-    MyClass foo;
+    Foo foo;
 
     boost::function<void(string)> f1, f2, f3;
 
     Child* pFoo = new Child();
 
-    f1 = boost::bind(&MyClass::Bark2, &foo, _1);
-    f2 = boost::bind(&MyClass::Bark2, pFoo, _1);
+    f1 = boost::bind(&Foo::Bark2, &foo, _1);
+    f2 = boost::bind(&Foo::Bark2, pFoo, _1);
     f3 = boost::bind(&Bark2, _1);
     f1("can see see me");
     f2("can see see me");
     f3("can see see me");
-}
-
-   ```
-## C 
-### Function pointer 
-```c
-#include <stdio.h>
-
-void f1() { printf("in f1\n"); }
-void f2() { printf("in f2\n"); }
-
-typedef void (*PFUN)();
-
-int main()
-{
-    /* it defines a variable with type of 
-     * function pointer
-     * similar to `int* pInt`
-     */
-    void (*pf)();
-    pf = f1;
-    pf();
-
-    // use funtion pointer type
-    PFUN pf2;
-    pf2 = f2;
-    pf2();
 }
 
 ```
