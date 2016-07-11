@@ -132,3 +132,9 @@ def is an executable sentence , like ``` a = "lyq" ```,  ```def``` create a func
 * It helps to save code from having too much one line functions. 
 
 [Here](http://www.diveintopython.net/power_of_introspection/lambda_functions.html) for more
+### Yield
+* ```yield```  is only used when defining a generator function 
+*  If ```yield``` appers in the body of a funtion starting with ```def```, it is no longer a regular function but a generator function.
+*  When generator function is called it returns an iterator known as generator. 
+*  The generator then controls of the generator function. 
+*    generator.next()  starts generator funtion until the first yield experssion, suspend, and return the yeild expression to the caller , or resume last call in generator function, until meeting second yield experssion. 
