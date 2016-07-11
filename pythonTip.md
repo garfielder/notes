@@ -103,6 +103,14 @@ From learning python
 `list` is a collection of other objects in a given order, while `dict` is a collection of other objects with no order. Elements in `dict` is referred by key rather than offset.
 
 ## Iterator
+
+An iterable objects includes list sequencial data type (list, string, tupple), some non-sequence type(dict, file) and any objects that has __getitem__ or __iter__ method. <br>
+
+An iterator object  =  an iterable object + Next() method <br>
+```iter(<iterable object>)``` grants the magic Next() to iterable object
+
+[here](http://www.cnblogs.com/bukekangli/p/5152451.html) for more
+
 * ```zip``` can be used to construct dict
 ```pythobn
 key = ['a', 'b']
