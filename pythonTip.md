@@ -17,6 +17,8 @@ An elegant to create new list. also availabe in c++ STL algorithm library.
 >>>
 ```
 
+List comprehension is faster than ```for``` loop, because ```for``` loop is running on PVM, while list compresension is implemented with __C__ code. 
+
 ### 从列表查找元素
 
 方法1：
