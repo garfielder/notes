@@ -115,3 +115,10 @@ d = dict(zip(key, value))
 ### difference with C
 def is an executable sentence , like ``` a = "lyq" ```,  ```def``` create a function object and assign to  the function name.  function name is a reference to the function object.
 
+### lambda
+* light-weight funtion
+* takes any number of arguments
+* return the value of a single expression
+* It helps to save code from having too much one line functions. 
+
+[Here](http://www.diveintopython.net/power_of_introspection/lambda_functions.html) for more
