@@ -138,3 +138,22 @@ def is an executable sentence , like ``` a = "lyq" ```,  ```def``` create a func
 *  When generator function is called it returns an iterator known as generator. 
 *  The generator then controls of the generator function. 
 *    generator.next()  starts generator funtion until the first yield experssion, suspend, and return the yeild expression to the caller , or resume last call in generator function, until meeting second yield experssion. 
+```python
+def fun():
+	str = 'spam'
+	for s in str:
+		yield s+s 
+
+myitr = fun()
+
+for i in myitr:
+    print i  # it calls myitr.next implicitly 
+
+'''
+print myitr.next()
+print myitr.next()
+print myitr.next()
+print myitr.next()
+print myitr.next()
+'''
+```
