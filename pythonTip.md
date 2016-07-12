@@ -18,10 +18,12 @@ An elegant to create new list. also availabe in c++ STL algorithm library.
 ```
 
 List comprehension is faster than ```for``` loop, because ```for``` loop is running on PVM, while list compresension is implemented with __C__ code. 
-
+###generator function
+* A function that returns an iterator. See ```yield``` part
 ### generator expression
 * It has a similar format as list comprehension. but it uses `()` rather  than `[]`. 
 * Compared with list comprehension, it may be a bit slower soemtimes, but it is memory efficient, becuase it does not have to create the full list.
+* It returns an iterator
 ``` python
 >>> listgen = (x for x in range(5))
 >>> listgen.next()
