@@ -41,6 +41,7 @@ StopIteration
 >>> 
 
 ```
+[here](http://legacy.python.org/dev/peps/pep-0289/) for more
 
 ### 从列表查找元素
 
