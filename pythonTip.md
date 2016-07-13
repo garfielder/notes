@@ -182,4 +182,13 @@ print myitr.next()
 print myitr.next()
 print myitr.next()
 '''
-```
+
+## modules 
+Modules could let us reuse python (or other language) code, create a top level namespace to avoid name confliction and write large software.
+### inside ```import```
+* find the module file.
+   * The searching path is defined in sys.path
+   * starts from current directory
+* compile source code into binaries (if necessaries)
+* execute module code
+   * so that module client could use the tools defined in the module.
