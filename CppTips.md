@@ -1,3 +1,7 @@
+## Shared_ptr
+put a newed pointer into shared_ptr  in a single sentence.  Otherwise exception would cause memory leak 
+
+
 ## Use const whenever possible
 
 * Before and Afer pointers
