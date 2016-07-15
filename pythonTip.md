@@ -192,3 +192,6 @@ Modules could let us reuse python (or other language) code, create a top level n
 * compile source code into binaries (if necessaries)
 * execute module code
    * so that module client could use the tools defined in the module.
+## Class
+### Vs module
+ Class is similar to module, it has attribute and method. Class mothod is invoked by <class_name>.method(). The most obvious difference is that, class can create multiple instances,   mehtod 
