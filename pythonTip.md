@@ -193,5 +193,14 @@ Modules could let us reuse python (or other language) code, create a top level n
 * execute module code
    * so that module client could use the tools defined in the module.
 ## Class
-### Vs module
- Class is similar to module, it has attribute and method. Class mothod is invoked by <class_name>.method(). The most obvious difference is that, class can create multiple instances,   but there is only one module instance
+* Vs module
+    * Class is similar to module, it has attribute and method. Class mothod is invoked by <class_name>.method(). The most obvious difference is that, class can create multiple instances,   but there is only one module instance.
+* keyword ```class``` defines a class object.It looks like function object. While the returned object is an class instance
+  ```python
+  class ClassName: pass
+  instance = ClassName()
+  ```
+* Class has named attribute that can be bind and reference 
+   * Class attribute bind to function are named method.
+
+See << Python in a NutShell>> for more
