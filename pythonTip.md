@@ -174,18 +174,18 @@ myitr = fun()
 
 for i in myitr:
     print i  # it calls myitr.next implicitly 
-
-'''
+```
+```
 print myitr.next()
 print myitr.next()
 print myitr.next()
 print myitr.next()
 print myitr.next()
-'''
+```
 
 ## modules 
 Modules could let us reuse python (or other language) code, create a top level namespace to avoid name confliction and write large software.
-### inside ```import```
+### inside import
 * find the module file.
    * The searching path is defined in sys.path
    * starts from current directory
