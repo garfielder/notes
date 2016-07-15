@@ -206,6 +206,6 @@ Modules could let us reuse python (or other language) code, create a top level n
    * Class attribute bind to function are named method.
 
 * built-in method
-   * __init__  : constructor, call class object implicitly invoke this api.
-   * __dict__  : dict that holds all its attributes except special member with __<name>__.
+   * ```__init__ ``` : constructor, call class object implicitly invoke this api.
+   * ```__dict__```  : dict that holds all its attributes except special member with ```__<name>__```.
 See << Python in a NutShell>> for more
