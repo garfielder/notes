@@ -191,7 +191,9 @@ Modules could let us reuse python (or other language) code, create a top level n
    * starts from current directory
 * compile source code into binaries (if necessaries)
 * execute module code
-   * so that module client could use the tools defined in the module.
+   * so that module client could use the tools defined in the module
+   
+
 ## Class
 * Vs module
     * Class is similar to module, it has attribute and method. Class mothod is invoked by <class_name>.method(). The most obvious difference is that, class can create multiple instances,   but there is only one module instance.
@@ -203,4 +205,7 @@ Modules could let us reuse python (or other language) code, create a top level n
 * Class has named attribute that can be bind and reference 
    * Class attribute bind to function are named method.
 
+* built-in method
+   * __init__  : constructor, call class object implicitly invoke this api.
+   * __dict__  : dict that holds all its attributes except special member with __<name>__.
 See << Python in a NutShell>> for more
