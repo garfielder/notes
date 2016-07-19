@@ -209,3 +209,6 @@ Modules could let us reuse python (or other language) code, create a top level n
    * ```__init__ ``` : constructor, call class object implicitly invoke this api.
    * ```__dict__```  : dict that holds all its attributes except special member with ```__<name>__```.
 See << Python in a NutShell>> for more
+* Class Instance
+   * each class instance inhert attribute from class object and has its own namespace
+   * assignment of self attribute will generate  the attribute that belongs to the object itself. 
