@@ -1,4 +1,5 @@
 # Windows Display Driver Model Architure
+## Architure
 ![WDDM](https://msdn.microsoft.com/dynimg/IC504961.png)
 
 * Direct3D Runtime
@@ -12,3 +13,6 @@
   * Call into Display miniport driver for furhter process
   *  Relies on Video memory manager to mange memory
   
+## IoMmu Model
+  ![HSA](https://msdn.microsoft.com/Dn894176.iommu_model.1(en-us,VS.85).png)
+It describes how CPU and GPU shares memory
