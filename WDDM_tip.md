@@ -12,7 +12,9 @@
   *  Provide interface that support Direct3D Runtime upward
   * Call into Display miniport driver for furhter process
   *  Relies on Video memory manager to mange memory
-  
+* Video memmory manager 
+  * It mamanges GPU memory management unit and underlying pagetable 
+  * It provides interface to allow user mode driver map GPU Virtual Address to allocation (physcial address) 
 ## IoMmu Model
   ![HSA](https://msdn.microsoft.com/Dn894176.iommu_model.1(en-us,VS.85).png)
 It describes how CPU and GPU shares memory
