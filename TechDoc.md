@@ -47,5 +47,7 @@ What is platform : The host plus a collection of devices
 
 
 [doc] : https://www.khronos.org/assets/uploads/developers/library/2012-pan-pacific-road-show-June/OpenCL-Details-Taiwan_June-2012.pdf
+### Event
+Event is an operation. It could depends on other event list, it will also block other event to proceed. The event can push into the command queue. 
 
 ## Some API
