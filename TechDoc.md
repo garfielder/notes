@@ -46,3 +46,5 @@ It describes how CPU and GPU shares memory
 
 
 [doc] : https://www.khronos.org/assets/uploads/developers/library/2012-pan-pacific-road-show-June/OpenCL-Details-Taiwan_June-2012.pdf
+
+## Some API
