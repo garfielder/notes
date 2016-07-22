@@ -23,6 +23,7 @@ It describes how CPU and GPU shares memory
 
 # OpenCL 
 ## Models
+What is platform : The host plus a collection of devices
 ### Platform models
 * One host, the big boss that controls every thing. 
 * A number of compute devices, it can be a GPU or a multi-core GPU, or somethign else
