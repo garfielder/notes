@@ -1,11 +1,17 @@
 ## Shared_ptr
 put a newed pointer into shared_ptr  in a single sentence.  Otherwise exception would cause memory leak 
 
+
+
 ## Tips to design a class 
 * DONOT expected to return an reference
 	* It may refer to an local variable, that will be destroied soon
 	* Using  `new`ed objects, it is easily to cause memory leak
 	* static is not safe in multiple thread environment
+* Pefer non-member function to member function
+	* The more member functions there are, the more functions there will be to access private member of a class
+		* This is bad for encapsulation
+	*  Too member function leads to big dependence for  class customer
 ## Use const whenever possible
 
 * Before and Afer pointers
