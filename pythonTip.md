@@ -207,7 +207,9 @@ Modules could let us reuse python (or other language) code, create a top level n
 
 * built-in method
    * ```__init__ ``` : constructor, call class object implicitly invoke this api.
-   * ```__dict__```  : dict that holds all its attributes except special member with ```__<name>__```.
+   * ```__dict__```  : dict that holds all its attributes except special member with ```__<name>__```
+   * ```__getitem__```: Used to capture index operation.  respond to ```for``` and ```<item> in <container>```  which looks like iterator
+   * ```__iter__```: Capture iterator operation. The class should have a ```next()``` method, and throw ```StopIteration``` after the last element
 See << Python in a NutShell>> for more
 * Class Instance
    * each class instance inhert attribute from class object and has its own namespace
