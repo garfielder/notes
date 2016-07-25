@@ -132,3 +132,11 @@ int main()
 ```
 
 
+## Exception
+* Three keywords 
+	* ```try```
+	* ```throw```
+	* ```catch```
+* In the try block, we can use throw statement  through a exception message object. The boject is not mysterious, but can be int, char, string, or any user-defined class
+* When run into ```throw```,  current function will execute ```return``` imedediatly, and use destructor to clear local objects. 
+* If ```catch``` block is not found in high level funtion, above action will be repeated until find the matched ```catch``` block
