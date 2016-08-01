@@ -214,3 +214,11 @@ See << Python in a NutShell>> for more
 * Class Instance
    * each class instance inhert attribute from class object and has its own namespace
    * assignment of self attribute will generate  the attribute that belongs to the object itself. 
+## Regular experession
+### `re.sub`
+```python
+>>> a = "li yong qing  yong yuan"
+>>> re.sub(r"(yong)", (r"_\1_"), a)
+'li _yong_ qing  _yong_ yuan'
+
+```
