@@ -132,7 +132,7 @@ int main()
 
 ## Exception
 
-Often, the modules that detects error does not know what action to take. The recovery action  depends on the module that invoked the operation that the module that is performing the operation. <<section 2.4.2 of The C++ Programming Language>>
+Often, the modules that detects error does not know what action to take. The recovery action  depends on the module that invoked the operation that the module that is performing the operation. \<\<section 2.4.2 of The C++ Programming Language\>\>
 
 * Three keywords 
 	* ```try```
