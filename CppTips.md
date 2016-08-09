@@ -144,3 +144,12 @@ Often, the modules that detects error does not know what action to take. The rec
 
 ### Thread Safty -- No Memory Leak
 RAII --> Resource esource Acquisition Is Initialization .  Use shared_ptr when possible. So, resource can be well released even when exception is throw anywhere even in constructor. 
+### The Three Exception Guarantees
+* No-fail guarantee 
+	* The user can guratee  the function won't through an exception or can eat all internal exceptions.
+* Strong guarantee
+	* A function goes out of scope because of an exception, it should not cause memory leak or change program state. Actually an transaction with commit or rollback semantic.  Could be done by "copy and swap "
+	"copy and swap" is expensive in memory consumption
+* Basic Guarantee
+	* When exception happens, no memory leaked and the object is still in a usable state. 
+	* 
