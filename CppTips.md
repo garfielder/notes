@@ -141,3 +141,6 @@ Often, the modules that detects error does not know what action to take. The rec
 * In the try block, we can use throw statement  through a exception message object. The boject is not mysterious, but can be int, char, string, or any user-defined class
 * When run into ```throw```,  current function will execute ```return``` imedediatly, and use destructor to clear local objects. 
 * If ```catch``` block is not found in high level funtion, above action will be repeated until find the matched ```catch``` block
+
+### Thread Safty -- No Memory Leak
+RAII --> Resource esource Acquisition Is Initialization .  Use shared_ptr when possible. So, resource can be well released even when exception is throw anywhere even in constructor. 
