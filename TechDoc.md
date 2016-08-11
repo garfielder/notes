@@ -57,3 +57,5 @@ http://www.nvidia.cn/content/PDF/fermi_white_papers/P.Glaskowsky_NVIDIA's_Fermi-
 
 
 One workgroup is running one streaming multiple processor(SM). Each SM contains 32 CUDA core. It has one FP unit and one Float unit.
+
+[Good Link for AMD GPU involvment](http://www.expreview.com/17961-all.html)
