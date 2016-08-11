@@ -51,3 +51,9 @@ What is platform : The host plus a collection of devices
 Event is an operation. It could depends on other event list, it will also block other event to proceed. The event can push into the command queue. 
 
 ## Some API
+#  Parallel Computing
+CUDA stands for Computer Unified Device Architecture。
+http://www.nvidia.cn/content/PDF/fermi_white_papers/P.Glaskowsky_NVIDIA's_Fermi-The_First_Complete_GPU_Architecture.pdf
+
+
+One workgroup is running one streaming multiple processor(SM). Each SM contains 32 CUDA core. It has one FP unit and one Float unit.
