@@ -61,7 +61,7 @@ One workgroup is running one streaming multiple processor(SM). Each SM contains 
 [Good Link for AMD GPU involvment](http://www.expreview.com/17961-all.html)
 
 
-# Compute Architecture
+# Compute Architecture notes (From ZJU CS PPT)
 
 ## Term
 * *response time* :   The tiem between start and the completion of an event.
@@ -86,3 +86,8 @@ Number of instructions per-program  Vs number of clocks per-instruction.
 * instruction formats number is small
 * Easy to to schedule on pipeline
 * Can easily be optimized by pipeline
+## Pipeline
+*A technique that allows to start an instruction before completing another one*
+* It has many stages, each stage carries out a different part ofinstruction or operation, which cooperats at a synchronized clock, are connected to form a pipe
+* An implementation technique to exploits parallesim among instructions in a sequential stream
+
