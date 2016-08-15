@@ -119,4 +119,4 @@ Fix for hazard: <br>
     * flushing until branch is resolved
   * predict not taken
     * penalty is , when we are wrong, we have to restart fetching branch targe and turned fetched instruction as NOP
-    * 
+    * compiler can code the frequent case in the untaken case
