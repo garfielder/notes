@@ -59,3 +59,22 @@ http://www.nvidia.cn/content/PDF/fermi_white_papers/P.Glaskowsky_NVIDIA's_Fermi-
 One workgroup is running one streaming multiple processor(SM). Each SM contains 32 CUDA core. It has one FP unit and one Float unit.
 
 [Good Link for AMD GPU involvment](http://www.expreview.com/17961-all.html)
+
+
+# Compute Architecture
+
+## Term
+* *response time* :   The tiem between start and the completion of an event.
+* *executaion time* : as refer to as response time
+* *throughtput* :     The total amount of work in a given time
+## CISC and RISC 
+reference : (http://cs.stanford.edu/people/eroberts/courses/soco/projects/risc/risccisc/)
+
+Number of instructions per-program  Vs number of clocks per-instruction. 
+
+### CISC
+* A primary goal of CISC is to complete a task in as  few lines of assembly as  possible. 
+* It is good for compiler, because hardware does complex work. 
+* The hardware could do a serial of operations in one instruction
+### RISC 
+* Separating "LOAD" and "STORE", they are indenpendent instructions 
