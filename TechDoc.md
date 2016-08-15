@@ -79,4 +79,9 @@ Number of instructions per-program  Vs number of clocks per-instruction.
 * It is good for compiler, because hardware does complex work. 
 * The hardware could do a serial of operations in one instruction
 ### RISC 
-* Separating "LOAD" and "STORE", they are indenpendent instructions 
+* Separating "LOAD" and "STORE", they are indenpendent instructions
+* CPI is almost to 1. 
+* Hardcode line instread of micro code.
+* instruction formats number is small
+* Easy to to schedule on pipeline
+* Can easily be optimized by pipeline
