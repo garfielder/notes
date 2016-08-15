@@ -93,3 +93,30 @@ Number of instructions per-program  Vs number of clocks per-instruction.
 * It has many stages, each stage carries out a different part ofinstruction or operation, which cooperats at a synchronized clock, are connected to form a pipe
 * An implementation technique to exploits parallesim among instructions in a sequential stream
 
+### Hazard (what makes pipelining hard to implement)
+
+Type of hazard<br>
+
+* structrual hazard
+  * hardware functional unit cannot support simultaneous access
+* data hazard
+  * an instruction depends on the result of previous instruction which is not ready yet
+* control hazard
+  * arise whiling pipling of branches or other instructions that change PC
+
+Fix for hazard: <br>
+* data hazard
+  * Simple way is to stall
+    * Need hardware logic to check data hazard
+  * forward
+    * Reduce data stall
+    * Instread of wait for result in memory, we forward it imediately  to the instruction that wants it
+* Structural hazard
+  * Structural hazard can be overcome by replicating hardware resource
+    * Multiple access to registers/memory
+* control hazard
+  * simple way: holding or deleting any instruction after branch until the branch destination is known
+    * flushing until branch is resolved
+  * predict not taken
+    * penalty is , when we are wrong, we have to restart fetching branch targe and turned fetched instruction as NOP
+    * 
