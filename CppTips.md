@@ -152,4 +152,11 @@ RAII --> Resource esource Acquisition Is Initialization .  Use shared_ptr when p
 	"copy and swap" is expensive in memory consumption
 * Basic Guarantee
 	* When exception happens, no memory leaked and the object is still in a usable state. 
-	* 
+
+
+# ```inline ```
+* It looks like function, without overhead of a funtion call
+* It is similar to C-style macro, but with type-safe.
+* Since inline leads to code replacement, in some case, it leads to inline expansion.
+* It is just a compiler directive, not a requirement
+* Functions defined  in class defination is an implicit inline function
