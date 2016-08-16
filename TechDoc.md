@@ -124,11 +124,18 @@ Fix for hazard: <br>
 ## ILP -- Instruction-Level-Parallelism
 * Basic block ILP is quite small, there are likely to be branches in a programs. So, loop-level parallalism can be exploited
 * Expand the loop and schedule the instruction according to dependencies between instructions
+
 ###　Dependency and Hazard
 * Dependency
   * RAW : true dependency 
   * WAW: output dependency 
   * WAR: anti-dependency 
 * Dependency is a potential hazard, it sets up an upper bound of how parallism can possibly be exploited
+* Program order
+  * determined by source program order
+  * perserve the program order where it affets the outcome of the program
 
-
+### Overcome data hazard with dynamical scheduling
+Enable out-of-order execution and out of order completion.  <br>
+*Score board* is used for dynamical scheduling <br>
+*Tomasulo* algorithm 
