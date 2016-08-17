@@ -1,3 +1,26 @@
+
+## Involvement of Pogramming Paradigms
+
+* Procedural Programming
+	* forcus on process  -  the algorithm to perform the desired computation
+	* supported by providing functions and returned values
+* Mudular Programming
+	* A set of related procedures with the data they manaipulate is often call a module
+	* Partition the program so that the data is hidden within modules
+	* Separation of compilation. each modules can  be compiles in a single .cpp file
+* User-Defined Types
+	* Decide which type you need, and provide a full set of operations for each type
+	* 
+* Object-Oriented Programming
+	* Decide which class you want
+	* Provide a full set of operations for each class
+	* Make commonality explict by using inherence
+* Generic Programming
+	* Decide which algorighms you want:
+	* parametererize them so that they work for a variety of suitable types and data structures
+	
+See more in <<The C++ Programming Languages>>
+
 ## Shared_ptr
 put a newed pointer into shared_ptr  in a single sentence.  Otherwise exception would cause memory leak 
 
