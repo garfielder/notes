@@ -139,3 +139,15 @@ Fix for hazard: <br>
 Enable out-of-order execution and out of order completion.  <br>
 *Score board* is used for dynamical scheduling <br>
 *Tomasulo* algorithm 
+
+## synchronization
+
+### Atomic Operation 
+ see section 6.15 of PCI_Express_Base_r3.0***.pdf
+* Ready and modify memory unit atomically 
+* We knows wehter we really did atomic operation (executation feedback)
+* Atomic operation in PCIE spec
+  * AtinucIo acoabukuues are optional normative
+  * Endpoint and Root port are permitted to implement AtomicOp Requester capabilites
+  * PCIE Express Function wiht Memory BARs  are premitted to implent AtomiticOp compelter capbilities arearchitectured for device-to-host, device-to-device, and host-to-devices.
+  * If hte completer of an AtomicOp enounter an uncorrectable error access target location or carrying out the atomic operation, the completer must handle it as a completer error(CA). 
