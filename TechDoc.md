@@ -164,3 +164,9 @@ lockit: EXCH R2, 0(R1)
   * test and set
   * fetch and increasment
   * Load linked/Stcore conidtional 
+    * use a linked registers to store the memory adderss
+    * once interrupt or write invalidate against that address detected, clear the address
+    * SC just check the adderss in linked reigsters to see whehter matched. 
+* One rule for atomic operation
+  * At any time, there is only one processor that can take the bus (or lock the bus)
+  * Gain perforce by caching  lock variable and reduce write invalidate.
