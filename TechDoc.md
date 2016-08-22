@@ -151,3 +151,16 @@ Enable out-of-order execution and out of order completion.  <br>
   * Endpoint and Root port are permitted to implement AtomicOp Requester capabilites
   * PCIE Express Function wiht Memory BARs  are premitted to implent AtomiticOp compelter capbilities arearchitectured for device-to-host, device-to-device, and host-to-devices.
   * If hte completer of an AtomicOp enounter an uncorrectable error access target location or carrying out the atomic operation, the completer must handle it as a completer error(CA). 
+* classic atomic operations
+  * atomic exchange
+    * Can be used to lock something 
+    ```asm
+        // Spin lock
+        // The lock variable can be cached for performance 
+        ADDUI R2, R0, #1
+lockit: EXCH R2, 0(R1)
+        BNEZ R0, lockit
+    ```
+  * test and set
+  * fetch and increasment
+  * Load linked/Stcore conidtional 
