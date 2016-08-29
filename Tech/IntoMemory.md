@@ -42,6 +42,13 @@ CMOS is a *process technology* that contains both CMos and NMos transisor . It i
 
 ## SRAM and DRAM
 
+Both SRAM and DRAM are semiconductor storage. The minum storage unit is a CMOS transistor, also named memory  bit, several bits  consist a memory  unit. Data will be lost after powerdown. 
+
+### SRAM
+
+
+
+
 ## Memory Control Logic
 
 ## Mordern Memory Techinque
