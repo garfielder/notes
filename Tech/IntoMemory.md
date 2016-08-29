@@ -18,9 +18,10 @@ For semiconductor such as silcon and germanium,  they have single crystal struct
 Magical things happen when introducing impurites into above crysital structure. There are N-type and P-type semiconductors.  Just as the names suggests,  N-type has more valance electrons while P types with more holes.
 (see chapter 1 of <<electronic devices and circuit theory>>　by Roylestad and Nahelshy)
 
-A Diode is a juction of n-type and p-type  secmiconductor. There 
-![P-N junction](https://en.wikipedia.org/wiki/File:Pn-junction-equilibrium.png)
+A Diode is a juction of n-type and p-type  secmiconductor.  
 
+![P-N junction ](https://upload.wikimedia.org/wikipedia/commons/d/d6/Pn-junction-equilibrium.png)
+(https://en.wikipedia.org/wiki/P%E2%80%93n_junction)
 
 ## SRAM and DRAM
 
