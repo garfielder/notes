@@ -14,7 +14,7 @@ For semiconductor such as silcon and germanium,  they have single crystal struct
 
 
 
-## Diode and C-MOS
+## Diode and JFET
 Magical things happen when introducing impurites into above crysital structure. There are N-type and P-type semiconductors.  Just as the names suggests,  N-type has more valance electrons while P types with more holes.
 (see chapter 1 of <<electronic devices and circuit theory>>　by Roylestad and Nahelshy)
 
@@ -22,6 +22,23 @@ A Diode is a juction of n-type and p-type  secmiconductor.
 
 ![P-N junction ](https://upload.wikimedia.org/wikipedia/commons/d/d6/Pn-junction-equilibrium.png)
 (https://en.wikipedia.org/wiki/P%E2%80%93n_junction)
+
+In the space charge region,  there is an internal e-field , if the external e-field is of the same direction, it makes the slice thicker, thus current is blocked.  Other wise, it makes current flows through the junction. 
+
+Jnction gate  field-effect  transistor(JEFT)  is a three-terminal semiconductor devices that can be used as electronically-controled switches, amplifiers, or voltage-controlled resistors. 
+
+
+See here for how it works:
+
+(http://www.learnabout-electronics.org/fet_03.php)
+
+By controlling the Vgs, we can control the conductivity between source and drain. 
+
+MOS transistor is another kinds of FED (field-effect transistor) other than JFET.  There are NMOS and PMOS. See the link below for more: 
+
+(http://wenku.baidu.com/view/b029704325c52cc58bd6be7a.html?re=view)
+
+CMOS is a *process technology* that contains both CMos and NMos transisor . It is not a name for a specific kind of transistor. 
 
 ## SRAM and DRAM
 
