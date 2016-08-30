@@ -27,3 +27,6 @@ get the type of variable and return the type. The expression is resolved in comp
     decltype(vec[0]) x = m;
 
 ```
+
+## Lamda function 
+Anonymous  function. The concept is is python for a long time. It provided a fast way of creating functions 
