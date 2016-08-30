@@ -2,5 +2,14 @@
 
 C++11 introduced a few grammar sugars that helps programmer to write less code, such as ```auto```,  ```decel``` . It brings features from mordern languages such as lamda function. It includes more tr1 library as its stardard library. 
 
-## auto
+## ```auto```
 With auto, we don't have to indicate a type explictly because it can be deduced on the right of '=' operator.  So ```for (std::vector<int>::conster itr = vec.begin(); ...```), can be saved as ``` for (auto itr = vec.begin(); ...) ```
+
+## ```constexpr```
+Similar to inline, it tells compilers this experssion can be caculated during compilation time. 
+
+```C++
+// https://en.wikipedia.org/wiki/C%2B%2B11
+constexpr int get_five() {return 5;}
+int some_value[get_five() + 7]; // Create an array of 12 integers. Legal C++11
+```
