@@ -59,11 +59,12 @@ To increase transisor density in a chip, people removed T3/T4 , and it because f
 There is no VCC to recharge the dram shell through T3/T4 as SRAM cell,  so external logic is required to recharge DRAM periodically. 
 
 
-## Memory Control Logic
+## Memory Extension
 Size of  memory chip is limited, but we can construct a 8K X 8  memory based on  eight 8K X 1 meomry chip to extent bits in a word, or we can construct a 64K X 8 memory based sixteen 8K X 8 memory chip. 
 Two image
 
-## Mordern Memory Techinque
+## High Speed Memory
+
 
 ## Cache 
 
