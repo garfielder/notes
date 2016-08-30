@@ -7,7 +7,7 @@
 ## Useful APP
 ### Chinese Input
 ### Flash plugin
-    http://www.linuxidc.com/Linux/2014-04/100490.htm
+    (http://www.linuxidc.com/Linux/2014-04/100490.htm)
 
 ## git vs perforce
 ###  Artichicture 
