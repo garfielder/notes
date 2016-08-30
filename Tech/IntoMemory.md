@@ -48,10 +48,10 @@ Both SRAM and DRAM are semiconductor storage. The minum storage unit is a CMOS t
 A typical SRAM cell is made up of size CMOSFET cell, each bit is stored on the four tansistors (T1-T4). ([link](https://en.wikipedia.org/wiki/Static_random-access_memory)
 Here is the handwirting diagram:
 
-T1/T2: Store 1/0
-T3/T4: Behaviors as resistors to avoid shorcut between VCC and A/B
-T5/t6/T7/T8: Select this cell
-I/O:     Read or Write
+* T1/T2: Store 1/0
+* T3/T4: Behaviors as resistors to avoid shorcut between VCC and A/B
+* T5/t6/T7/T8: Select this cell
+* I/O:     Read or Write
 
 
 
