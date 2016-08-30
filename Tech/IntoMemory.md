@@ -52,7 +52,7 @@ Here is the handwirting diagram:
 * T3/T4: Behaviors as resistors to avoid shorcut between VCC and A/B
 * T5/t6/T7/T8: Select this cell
 * I/O:     Read or Write
-* 
+
 ### DRAM
 To increase transisor density in a chip, people removed T3/T4 , and it because four-transistor RAM. To hold the data, two capacitances are introduced between gate port of T1/T2 and ground. 
 
