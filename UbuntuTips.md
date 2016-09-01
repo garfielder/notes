@@ -86,3 +86,9 @@ view .gz file without gunzip
 :%s/src_string/dst_string/g  # '/' is used as delimiter 
 :%s#src_string#dst_string/g  # '#' is used as delimiter 
 ```
+
+### line wrap
+```
+set nowrap # disable line wrap
+set wrap   # enable line wrap
+```
