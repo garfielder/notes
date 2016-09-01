@@ -183,3 +183,9 @@ RAII --> Resource esource Acquisition Is Initialization .  Use shared_ptr when p
 * Since inline leads to code replacement, in some case, it leads to inline expansion.
 * It is just a compiler directive, not a requirement
 * Functions defined  in class defination is an implicit inline function
+
+#```pragma```
+* ```#pragma once``` 
+	* Make sure the head is only compiled once
+* ```#pragma message("Hello, I am in compiler"); // output in compilation stage```
+* * ```#pragma Warning("Hello, I am in compiler"); // warning in compilation stage```
