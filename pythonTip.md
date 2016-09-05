@@ -222,3 +222,11 @@ See << Python in a NutShell>> for more
 'li _yong_ qing  _yong_ yuan'
 
 ```
+### Define c-ctyle struct
+In C, we have ```struct```, what to do in python? Here it is: 
+```python
+class Elem : pass  # We don't have to declare attribute in class
+elem = Elem()
+elem.start = 0xa;
+elem.end = 0xb; 
+```
