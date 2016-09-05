@@ -127,3 +127,52 @@ header.o: header.cpp  header.h
 clean:
         rm out *.o
 ```
+### find function implementation
+
+We always declear  a class header in a .h/.hpp file,  and define in a .cpp.  For a cpp file it looks like:
+
+```c++
+void MyClass::Fun1(){
+    if (a > b) {...} else{...}
+}
+
+void MyClass::Fun2()
+{
+   // ....
+}
+
+// other members ....
+
+```
+
+Write a script to capture all function bodies between '{' and '}'
+
+```python
+fp = open(file_path, 'r')
+
+content = fp.read(); 
+fp.close()
+
+bodies = []
+
+stack = []
+for idx in range(0, len(content)):
+    ch = content[idx]
+    if ch == '{':
+        stack.append(idx)
+    elif  ch == '}':
+        if len(stack) == 1: # We got a function block
+            bodies.append( (stack.pop(), idx) )
+        elif (len(stack) == 0):
+            raise Exception(" '}' does not match any '{'") 
+        else:
+            stack.pop()
+
+for body in bodies:
+    print "--------------------------------"
+    for idx in range(body[0], body[1] + 1):
+        sys.stdout.write(content[idx])
+        
+    print
+
+```
