@@ -231,3 +231,10 @@ elem.start = 0xa;
 elem.end = 0xb; 
 ```
 ### directory walk 
+``` python
+rootDir = " "
+for dirName, subdirList, fileList in os.walk(rootDir, topdown=False):
+    for file in fileList:
+        print dirName  + "/" + file
+        
+ ```
