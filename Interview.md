@@ -176,3 +176,20 @@ for body in bodies:
     print
 
 ```
+
+## Memory in C
+A process is  running when OS loaded an executable. What is in memory to stand for a process? <br>
+Who initialized global data structure
+
+```c++
+
+class MyClass{
+    MyClass(){printf("in contructor\n");}
+};
+
+MyClass myclass;
+int main()
+{
+    printf("Hi in main\n");
+}
+```
