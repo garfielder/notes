@@ -69,8 +69,14 @@ Two image
 
 ## Interleaved Memory Access
 
-http://accel.cs.vt.edu/files/lecture11.pdf
-http://accel.cs.vt.edu/files/lecture12.pdf
+(http://accel.cs.vt.edu/files/lecture11.pdf)
+(http://accel.cs.vt.edu/files/lecture12.pdf)
+
+Bank is the logical unit that can be accessed cocurrently. 
+
+When GPU is doing compute or graphic work.   A number of threads from the same thread group can be executing simtenouly. For the best memory effiency, all threads are access different banks at the same time. All those memory access can be bound into one memory access which named coalescing access. (page 50 of <跨平台的多核与众核编程讲义>)
+
+
 ## Cache 
 
 ## Reference 
