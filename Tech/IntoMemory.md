@@ -66,6 +66,7 @@ Two image
 ## Interleaved Memory Access
 
 http://accel.cs.vt.edu/files/lecture11.pdf
+http://accel.cs.vt.edu/files/lecture12.pdf
 ## Cache 
 
 ## Reference 
