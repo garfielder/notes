@@ -33,5 +33,14 @@ Anonymous  function. The concept is is python for a long time. It provided a fas
 Python's lambda expression is simple, just remove the function name. But C++ lambda support is a bit difficult, it also has a concept named 'capture list', which are names in local environment
 
 ```c++
-[<capure_list>](<argument_list>){<function_body>}
+[capure_list](argument_list){function_body}
+```
+
+```c++
+     int base = 100;  // name in local environment
+    vector<int> vec;
+    vec.push_back(1);
+    vec.push_back(3);
+    vec.push_back(5);
+    for_each(vec.begin(), vec.end(), [base](int x){printf("- %d - ", base + x );});
 ```
