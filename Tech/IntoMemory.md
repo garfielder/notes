@@ -63,6 +63,10 @@ There is no VCC to recharge the dram shell through T3/T4 as SRAM cell,  so exter
 Size of  memory chip is limited, but we can construct a 8K X 8  memory based on  eight 8K X 1 meomry chip to extent bits in a word, or we can construct a 64K X 8 memory based sixteen 8K X 8 memory chip. 
 Two image
 
+## Memory system orgination 
+![Memory system orgination](http://cdn3.techbang.com.tw/system/images/164318/original/8f04a1f57fe07692327b9269ba484ce4.jpg?1401354086)
+(http://www.techbang.com/posts/18381-from-the-channel-to-address-computer-main-memory-structures-to-understand)
+
 ## Interleaved Memory Access
 
 http://accel.cs.vt.edu/files/lecture11.pdf
