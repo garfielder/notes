@@ -41,7 +41,10 @@ ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsysca
 Notice, *vdso* provides mechansim to accelerate execuration of certains system call. Kernel maps some kernel routines (gettimeofday) into user space,  all such user pages are mapped into the same kernel physical page.  With it, there is no expensive system call and context switch between user process and kernel. 
 
 (https://lwn.net/Articles/446528/) gives a more details about vDSO.
+### /process
+proc - process information pseudo-file system
 
+(http://linux.die.net/man/5/proc)
 ## Thread 
 ###  Green Thread 
 Some language provided API to create green thread, they are run in user mode, created and scheduled by language or library runtime.  OS is not aware of the existance of them.  such as sc_spawn in systemC library or Thread object in Java. <br>
