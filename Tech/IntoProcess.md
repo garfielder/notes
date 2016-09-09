@@ -17,6 +17,30 @@ $5 = 0x7fffffffda63 "b\016"
 ```
 
 ```/proc/<proc_id>/maps ``` give a good example of memory layout of a process
+```
+richli-VirtualBox:/proc/2210> cat maps
+00400000-00401000 r-xp 00000000 08:01 429891                             /home/richli/studio/cpp/a.out
+00600000-00601000 r--p 00000000 08:01 429891                             /home/richli/studio/cpp/a.out
+00601000-00602000 rw-p 00001000 08:01 429891                             /home/richli/studio/cpp/a.out
+7fdf08f10000-7fdf090cb000 r-xp 00000000 08:01 922370                     /lib/x86_64-linux-gnu/libc-2.19.so
+7fdf090cb000-7fdf092ca000 ---p 001bb000 08:01 922370                     /lib/x86_64-linux-gnu/libc-2.19.so
+7fdf092ca000-7fdf092ce000 r--p 001ba000 08:01 922370                     /lib/x86_64-linux-gnu/libc-2.19.so
+7fdf092ce000-7fdf092d0000 rw-p 001be000 08:01 922370                     /lib/x86_64-linux-gnu/libc-2.19.so
+7fdf092d0000-7fdf092d5000 rw-p 00000000 00:00 0 
+7fdf092d8000-7fdf092fb000 r-xp 00000000 08:01 922346                     /lib/x86_64-linux-gnu/ld-2.19.so
+7fdf094fa000-7fdf094fb000 r--p 00022000 08:01 922346                     /lib/x86_64-linux-gnu/ld-2.19.so
+7fdf094fb000-7fdf094fc000 rw-p 00023000 08:01 922346                     /lib/x86_64-linux-gnu/ld-2.19.so
+7fdf094fc000-7fdf094fd000 rw-p 00000000 00:00 0 
+7fdf094ff000-7fdf09504000 rw-p 00000000 00:00 0 
+7fff320e1000-7fff32102000 rw-p 00000000 00:00 0                          [stack]
+7fff32108000-7fff3210a000 r--p 00000000 00:00 0                          [vvar]
+7fff3210a000-7fff3210c000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+```
+Notice, *vdso* provides mechansim to accelerate execuration of certains system call. Kernel maps some kernel routines (gettimeofday) into user space,  all such user pages are mapped into the same kernel physical page.  With it, there is no expensive system call and context switch between user process and kernel. 
+
+(https://lwn.net/Articles/446528/) gives a more details about vDSO.
 
 ## Thread 
 ###  Green Thread 
