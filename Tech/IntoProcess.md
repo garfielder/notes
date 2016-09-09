@@ -4,7 +4,8 @@
 ## What is 
 * A program running in execution.
 * Monitor Program layout in a program
-  Main data structure for a process 
+  Main data structure for a process  <br>
+
 \<TODO: adding the impage\> figure 3.1  of [[1]](#system)
 
   For memory layout, [reference 2 ]( #ref2) is also a good example. It answers why user main function is not starting from, that is due to [cr0.o](https://en.wikipedia.org/wiki/Crt0),  one important thing for cr0.o does is to initialize global data. 
