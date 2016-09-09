@@ -15,7 +15,13 @@ db) print &d
 $5 = 0x7fffffffda63 "b\016"
 ```
 
+## Thread 
+###  Green Thread 
+Some language provided API to create green thread, they are run in user mode, created and scheduled by language or library runtime.  OS is not aware of the existance of them.  such as sc_spawn in systemC library or Thread object in Java. <br>
 
+Take Java threads for example, there may many Java thread running cocurently, but it is JVM rather than OS manages and scheduls them, so there are still only one Java thread running in OS. 
+
+Green threads cannot utilize multi-core, it always runs on the same Core in a single OS thread
 
 ## Reference 
 
