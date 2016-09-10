@@ -45,6 +45,8 @@ Notice, *vdso* provides mechansim to accelerate execuration of certains system c
 proc - process information pseudo-file system
 
 (http://linux.die.net/man/5/proc)
+
+### Context Switch and system call
 ## Thread 
 ###  Green Thread 
 Some language provided API to create green thread, they are run in user mode, created and scheduled by language or library runtime.  OS is not aware of the existance of them.  such as sc_spawn in systemC library or Thread object in Java. <br>
