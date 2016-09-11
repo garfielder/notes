@@ -23,6 +23,7 @@
 | update workspace |  p4 sync | git pull |  git would update both local repo and work copy|
 | update a file or files | p4 sync file/files| no single command | |
 |edit a file | p4 edit file/files | git add <modified_files>; git comment -a -m "message" | git add then commit |
+|Move a file | p4 delete file; p4 add <other_dir>/file|git mv <other_dir>||
 |submit  to remove depot| p4 submit | git push -u origin master| |
 
 ## Kernel
