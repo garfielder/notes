@@ -60,5 +60,5 @@ Precisely speaking, a POD is an object that can be manipulated as `just data` wi
     * no virutal member in base  (no vptr)
     * all member with same access control
     * all memboer defined in the same on class in the hierarchy so that data layout optimization won't be impacted. 
-* Standard layout
-* Standard Layout
+ 
+```is_pod``` is introduced to check pod or not
