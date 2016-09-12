@@ -44,3 +44,21 @@ Python's lambda expression is simple, just remove the function name. But C++ lam
     vec.push_back(5);
     for_each(vec.begin(), vec.end(), [base](int x){printf("- %d - ", base + x );});
 ```
+
+## Plain Old Data
+
+Simply speaking, it should be an data type which behaves like C, can be copied  bitwisely.
+
+Precisely speaking, a POD is an object that can be manipulated as `just data` without worrrying about compicatons of class layouts or user-defined semantics for contruction, copy, and move
+* Trival . The class has a trival 
+    * default constructor
+    * default copy constructor
+    * default copy assignment operator
+    * default destructor
+* Standard layout
+    * no virutal member  (no vptr)
+    * no virutal member in base  (no vptr)
+    * all member with same access control
+    * all memboer defined in the same on class in the hierarchy so that data layout optimization won't be impacted. 
+* Standard layout
+* Standard Layout
