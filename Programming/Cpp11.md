@@ -15,6 +15,11 @@ Similar to inline, it tells compilers this experssion can be caculated during co
 constexpr int get_five() {return 5;}
 int some_value[get_five() + 7]; // Create an array of 12 integers. Legal C++11
 ```
+### Vs ```const```
+* ```constexpr``` is to enalbed and ensure compile-time enavluation
+* ```const ``` is simply to specify immutability in interfaces. 
+
+The purpose to have both is t oavoid using literals scatterred around, which is one of the nastiest mantenance hazards. 
 
 ## ```decltype```
 get the type of variable and return the type. The expression is resolved in compilation
