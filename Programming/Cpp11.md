@@ -73,3 +73,6 @@ Precisely speaking, a POD is an object that can be manipulated as `just data` wi
 Answer is simple: NO DIFFERENCE <br>
 ```using TestItem = shared_ptr<Base>;``` <br>
 ```typedef shared_ptr<Base> TestItem```
+
+## Construct/cleanup/Copy/Move
+TODO
