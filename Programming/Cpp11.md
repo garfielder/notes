@@ -65,6 +65,6 @@ Precisely speaking, a POD is an object that can be manipulated as `just data` wi
 
 ## ```typedef``` Vs  type alias 
 
-Answer is simple: NO DIFFERENCE 
+Answer is simple: NO DIFFERENCE <br>
 ```using TestItem = shared_ptr<Base>;``` <br>
 ```typedef shared_ptr<Base> TestItem```
