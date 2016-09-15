@@ -62,3 +62,9 @@ Precisely speaking, a POD is an object that can be manipulated as `just data` wi
     * all memboer defined in the same on class in the hierarchy so that data layout optimization won't be impacted. 
  
 ```is_pod``` is introduced to check pod or not
+
+## ```typedef``` Vs  type alias 
+
+Answer is simple: NO DIFFERENCE 
+```using TestItem = shared_ptr<Base>;``` <br>
+```typedef shared_ptr<Base> TestItem```
