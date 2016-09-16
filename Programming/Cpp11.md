@@ -105,3 +105,11 @@ class template parameters are neverred  decuded, user must put it into \<\> expl
 	int c { 20 };  // c++11 new, initialization list
 	int d = { 21 }; /*c style */
 ```
+
+List initialization can wildly be used in more context than other three.  However, it is not as good as '=' when type deduction is needed
+
+empty ```{}``` means default value.  for pionter it is ```nullptr```
+
+### uninitialized variable 
+for variable stored in data segment ( global/static variable),  uninitialized means ```{}```, which means it is 0.
+for variable stored in heap or stack, its value is underdermined. On Windwos, it is a random data, on Linux, it is zero
