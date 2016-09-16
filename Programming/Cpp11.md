@@ -93,3 +93,5 @@ fun("string");
 fun<int>(18);
 fun<int>("string"); // error
 ```
+
+class template parameters are neverred  decuded, user must put it into \<\> explicitly
