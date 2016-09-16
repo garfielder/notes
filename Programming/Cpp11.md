@@ -110,6 +110,7 @@ List initialization can wildly be used in more context than other three.  Howeve
 
 empty ```{}``` means default value.  for pionter it is ```nullptr```
 
+```{}``` does not support narrowing convertation, such as int -\> char
 ### uninitialized variable 
 for variable stored in data segment ( global/static variable),  uninitialized means ```{}```, which means it is 0. <br>
 
