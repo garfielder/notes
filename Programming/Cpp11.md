@@ -76,3 +76,20 @@ Answer is simple: NO DIFFERENCE <br>
 
 ## Construct/cleanup/Copy/Move
 TODO
+
+## Template
+
+function template can be deduced by compiler. 
+
+```c++
+
+template <typename T>
+void fun2(T a){
+    std::cout << "Temp func :" << a << std::endl;
+}
+
+fun(18);
+fun("string");
+fun<int>(18);
+fun<int>("string"); // error
+```
