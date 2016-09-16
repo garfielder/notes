@@ -95,3 +95,13 @@ fun<int>("string"); // error
 ```
 
 class template parameters are neverred  decuded, user must put it into \<\> explicitly
+
+## Initialization List
+
+### Four ways for initialization
+```c++
+	int a(18);
+	int b = 19;  /* c style */
+	int c { 20 };  // c++11 new, initialization list
+	int d = { 21 }; /*c style */
+```
