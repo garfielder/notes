@@ -111,5 +111,6 @@ List initialization can wildly be used in more context than other three.  Howeve
 empty ```{}``` means default value.  for pionter it is ```nullptr```
 
 ### uninitialized variable 
-for variable stored in data segment ( global/static variable),  uninitialized means ```{}```, which means it is 0.
+for variable stored in data segment ( global/static variable),  uninitialized means ```{}```, which means it is 0. <br>
+
 for variable stored in heap or stack, its value is underdermined. On Windwos, it is a random data, on Linux, it is zero
