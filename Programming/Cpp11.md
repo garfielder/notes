@@ -75,7 +75,11 @@ Answer is simple: NO DIFFERENCE <br>
 ```typedef shared_ptr<Base> TestItem```
 
 ## Construct/cleanup/Copy/Move
-TODO
+```c+
+x= y;
+```
+* *Copy* is the conventional meaning, after assignment, x and y  are both equal to y's original value
+* *Move* leaves ```x``` with ```y```'s former value and ```y``` with some *moved-from* state
 
 ## Template
 
