@@ -79,7 +79,12 @@ Answer is simple: NO DIFFERENCE <br>
 x= y;
 ```
 * *Copy* is the conventional meaning, after assignment, x and y  are both equal to y's original value
+```c++
+ 	X(const X&) // Copy constructor
+	X& operator=(const X&) // Copy assignment
+```
 * *Move* leaves ```x``` with ```y```'s former value and ```y``` with some *moved-from* state
+    * More efficient
 
 ## Template
 
