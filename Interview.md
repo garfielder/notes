@@ -1,5 +1,9 @@
 
 ## C++ 
+### C++ Misc
+* What happens for a private desctructor 
+    * can only be ```new```ed without free
+
 ### Will there be problem within following code:
 ```c++
 
