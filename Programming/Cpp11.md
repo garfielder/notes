@@ -85,9 +85,15 @@ x= y;
 ```
 * *Move* leaves ```x``` with ```y```'s former value and ```y``` with some *moved-from* state
     * More efficient
+    * move contructor takes xvalue type (see http://en.cppreference.com/w/cpp/language/value_category)
+```c++
+	X(X&& other); // move constructor
+```
+        
 
 Stroustrup gave a good example. Suppose A wants to have a car like B's .  Solution one: B give car to A （regardless of the money paid), B find out A's car Information, by a completely new one.   Solution 1 is shadows copy or move, solution 2 is deep copy.
 
+M
 
 ## Template
 
