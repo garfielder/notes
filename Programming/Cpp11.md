@@ -74,7 +74,7 @@ Answer is simple: NO DIFFERENCE <br>
 ```using TestItem = shared_ptr<Base>;``` <br>
 ```typedef shared_ptr<Base> TestItem```
 
-## Construct/cleanup/Copy/Move
+## Copy and Move
 ```c+
 x= y;
 ```
@@ -85,6 +85,9 @@ x= y;
 ```
 * *Move* leaves ```x``` with ```y```'s former value and ```y``` with some *moved-from* state
     * More efficient
+
+Stroustrup gave a good example. Suppose A wants to have a car like B's .  Solution one: B give car to A （regardless of the money paid), B find out A's car Information, by a completely new one.   Solution 1 is shadows copy or move, solution 2 is deep copy.
+
 
 ## Template
 
