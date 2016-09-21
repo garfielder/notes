@@ -13,3 +13,6 @@ http://portal.acm.org/portal.cfm  <br>
 http://www.vldb.org/   <br>
 
 [reference](http://www.blogjava.net/liyong/archive/2010/01/07/84371.html)
+
+### Compute architecture
+(http://resources.infosecinstitute.com/system-address-map-initialization-in-x86x64-architecture-part-1-pci-based-systems/)
