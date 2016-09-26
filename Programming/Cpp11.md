@@ -128,9 +128,29 @@ class template parameters are neverred  decuded, user must put it into \<\> expl
 List initialization can wildly be used in more context than other three.  However, it is not as good as '=' when type deduction is needed
 
 empty ```{}``` means default value.  for pionter it is ```nullptr```
+```c++
+	int a[18]; // uninialized values
+	int a[18]{}; // zero values
+```
 
 ```{}``` does not support narrowing convertation, such as int -\> char
 ### uninitialized variable 
 for variable stored in data segment ( global/static variable),  uninitialized means ```{}```, which means it is 0. <br>
 
 for variable stored in heap or stack, its value is underdermined. On Windwos, it is a random data, on Linux, it is zero
+
+
+## explicit ```default```ed  or ```delete```d  special functions
+C++11 has 6 special class member funcitions.  We can ask compiler explicitly to let it generate or supress an exact functions below. 
+```c++
+	class MyClass{
+	public:
+		MyClass()=default;  // default constructor
+		~MyClass()=default; // default destructor
+		MyClass& MyClass(const MyClass& other) = default ; //default copy constructor
+		MyClass& operator=(const MyClass& other)=default;  // default assignment 
+		MyClass(MyClass&& other)=default; // default move constructor  
+		MyClass& operator=(MyClass&& other)=default ; // default move assignment 
+		
+	};
+```
