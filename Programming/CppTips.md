@@ -189,3 +189,14 @@ RAII --> Resource esource Acquisition Is Initialization .  Use shared_ptr when p
 	* Make sure the head is only compiled once
 * ```#pragma message("Hello, I am in compiler"); // output in compilation stage```
 * * ```#pragma Warning("Hello, I am in compiler"); // warning in compilation stage```
+
+# extern
+we can see extern "C" in many place, what is it? <br>
+Cpp code defined within {} will be compiled  and linked in a "C" way. For example, a function void foo(int, int), in C, it will be stored as 'foo' in object file. However in CPP, it may become some strange name such "foo_int_int", which is used to handle overloading.
+Whey we have to compile our cpp file in a "C" way, it is because there are many excellent and stable c libraries(such as stdio.h), if they want to be used, extern C is needed, or there will be link error.
+
+```c
+exern "C"{
+/* Code */
+}
+```
