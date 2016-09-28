@@ -200,3 +200,16 @@ exern "C"{
 /* Code */
 }
 ```
+# template 
+## specialization 
+template defines a generic class or function with one or parameters.  <br>
+The parameters  can be a type/value/template <br>
+
+Compiler generated differnet implementations of a template based on different arguments. 
+
+specialization is a technique to make one kinds of argument special, which is not follow the template. 
+
+A useful use case , please refert to 25.3 of [link](#cppbook)
+
+# Reference 
+1. <a name=cppbook> The C++ Programming Language. Fourth Edition. </a>
