@@ -140,6 +140,29 @@ for variable stored in data segment ( global/static variable),  uninitialized me
 for variable stored in heap or stack, its value is underdermined. On Windwos, it is a random data, on Linux, it is zero
 
 
+### concept and constraint
+This is not C++11, but more modern ideas in C++17<br>
+
+In a typical functions call, we spend some efforcts to validate incomming arguments, if error, we fire an assertion or someother error message. <br>
+
+We need some checking mechanism for template arguments.   ```constraint``` are such checks defined in implementation. It is similar to reguar function argument, the difference is done by compilation-time check such as ```static_assert```
+
+A ```concept``` is a named set of  requirement in the form of something like a function, it is a predicate 
+
+```c++ 
+// from http://en.cppreference.com/w/cpp/language/constraints
+// variable concept from the standard library (Ranges TS)
+template <class T, class U>
+concept bool Derived = std::is_base_of<U, T>::value;
+ 
+// function concept from the standard library (Ranges TS)
+template <class T>
+concept bool EqualityComparable() { 
+    return requires(T a, T b) { {a == b} -> Boolean; {a != b} -> Boolean; };
+}
+```
+
+
 ## explicit ```default```ed  or ```delete```d  special functions
 C++11 has 6 special class member funcitions.  We can ask compiler explicitly to let it generate or supress an exact functions below. 
 ```c++
