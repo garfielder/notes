@@ -115,6 +115,20 @@ fun<int>("string"); // error
 
 class template parameters are neverred  decuded, user must put it into \<\> explicitly
 
+
+ 
+### specialization 
+template defines a generic class or function with one or parameters.  <br>
+The parameters  can be a type/value/template <br>
+
+Compiler generated differnet implementations of a template based on different arguments. 
+
+specialization is a technique to make one kinds of argument special, which is not follow the template. 
+
+A useful use case , please refert to 25.3 of [link](#cppbook)
+
+
+
 ### concept and constraint
 This is not C++11, but more modern ideas in C++17<br>
 
@@ -179,3 +193,5 @@ C++11 has 6 special class member funcitions.  We can ask compiler explicitly to 
 		
 	};
 ```
+## Reference 
+1. <a name=cppbook> The C++ Programming Language. Fourth Edition. </a>
