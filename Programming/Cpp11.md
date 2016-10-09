@@ -193,5 +193,28 @@ C++11 has 6 special class member funcitions.  We can ask compiler explicitly to 
 		
 	};
 ```
+
+## Mist 
+This section contains simple tips
+
+### Arrary reference 
+```f(T* a)``` or ```f(T a[])``` lost the arrary size information of the argument.   Array reference can solve this problem 
+
+```c++
+#include <iostream>
+using namespace std;
+
+template<class T, int N>
+void f(T(&r)[N])
+{
+    cout << sizeof(r) << endl;
+}
+
+int main(){
+    char a[4] = {4, 3, 5, 9};
+    f(a);
+}
+```
+
 ## Reference 
 1. <a name=cppbook> The C++ Programming Language. Fourth Edition. </a>
