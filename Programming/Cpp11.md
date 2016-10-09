@@ -176,7 +176,12 @@ for variable stored in data segment ( global/static variable),  uninitialized me
 
 for variable stored in heap or stack, its value is underdermined. On Windwos, it is a random data, on Linux, it is zero
 
+### As arguments to a parameter  of 
+* std::initializer<T>
+* A type can be initialized with the values in the list (equal to () of the legacy way) 
+* A refernce to an array of T. 
 
+See section of 12.2.3  of  [1](#cppbook)
 
 
 ## explicit ```default```ed  or ```delete```d  special functions
