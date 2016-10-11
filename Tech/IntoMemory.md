@@ -79,4 +79,6 @@ When GPU is doing compute or graphic work.   A number of threads from the same t
 
 ## Cache 
 
+Memory is import in computer system. It is measure in three ways(better word), including : a) capicity  a) dollor per bit b) access  speed. People are greedy, they want large capicity, fast access time and low price, but a single storage could not meet the requirement, so memory hierachy is introduced 
+
 ## Reference 
