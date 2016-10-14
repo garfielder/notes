@@ -81,4 +81,8 @@ When GPU is doing compute or graphic work.   A number of threads from the same t
 
 Memory is import in computer system. It is measure in three ways(better word), including : a) capicity  a) dollor per bit b) access  speed. People are greedy, they want large capicity, fast access time and low price, but a single storage could not meet the requirement, so memory hierachy is introduced 
 
+![Memory hierarchy](https://en.wikipedia.org/wiki/Memory_hierarchy#/media/File:ComputerMemoryHierarchy.svg)
+
+As one goes down the hierachy,  frequency of the memory access from processor does down.   Principle here is *locality of reference*. During an execuation of a program,  memory reference by process, tend to cluster. 
+
 ## Reference 
