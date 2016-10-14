@@ -85,4 +85,14 @@ Memory is import in computer system. It is measure in three ways(better word), i
 
 As one goes down the hierachy,  frequency of the memory access from processor does down.   Principle here is *locality of reference*. During an execuation of a program,  memory reference by process, tend to cluster. 
 
+### Element to clarify difference arhitectures [section 4.3 of book 1 ](#book1)
+* Caches address 
+  *  Logical Cache: store data using virutal adderss.  But same virutal address in diffeernt  VM contexts are mappped to different physcal location. So, context switching requires invalidations 
+  * Phycial cache.
+* Cache size
+  *  tradoff. The small the faster. 
+* Mapping function. 
+  * check 白中英组成原理
+
 ## Reference 
+<a name=book1>1. compute Organization and Architecture 9ed. Willam Stallings. </a>
