@@ -92,7 +92,12 @@ As one goes down the hierachy,  frequency of the memory access from processor do
 * Cache size
   *  tradoff. The small the faster. 
 * Mapping function. 
-  * check 白中英组成原理
+   * fully associative. Each memory block can be mapped into any cache line. 
+      * Low missing rate.  but complex control logic. Only available for small cache
+   * direct assiciative. Each meory block is mapped into a specific cache line. Easy to implement, but high missing rate. 
+   * set associate. Cache lines are divided into different sets, each sets contains 2/4/16/32/64 lines(or cache blocks), although each memory block can be mapped in a single block, but  hit rate is still high, bacause there are a number of  candicated lines for the memory block 
+      * A set with N lines are named N-way cache
+  
 
 ## Reference 
 <a name=book1>1. compute Organization and Architecture 9ed. Willam Stallings. </a>
