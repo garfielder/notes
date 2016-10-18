@@ -97,7 +97,21 @@ As one goes down the hierachy,  frequency of the memory access from processor do
    * direct assiciative. Each meory block is mapped into a specific cache line. Easy to implement, but high missing rate. 
    * set associate. Cache lines are divided into different sets, each sets contains 2/4/16/32/64 lines(or cache blocks), although each memory block can be mapped in a single block, but  hit rate is still high, bacause there are a number of  candicated lines for the memory block 
       * A set with N lines are named N-way cache
-  
+ 
+### Cache Coherency
+#### Concept 
+Concept from  计算机体系结构量化的研究方法
+
+#### Cache Write policy 
+write back  and write through 
+
+#### Cache in muli-core system
+
+Meed a new subjects?
+Read through 
+
+
+
 
 ## Reference 
 <a name=book1>1. compute Organization and Architecture 9ed. Willam Stallings. </a>
