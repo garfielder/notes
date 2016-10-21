@@ -103,9 +103,13 @@ As one goes down the hierachy,  frequency of the memory access from processor do
 Concept from  计算机体系结构量化的研究方法
 
 #### Cache Write policy 
-write back  and write through 
+* Write through
+    * Wemory write is written into both cache and main memory. 
+* Write back 
+    * Memory writes eventually  goes into main memory 
 
 #### Cache in muli-core system
+
 
 Meed a new subjects?
 Read through 
