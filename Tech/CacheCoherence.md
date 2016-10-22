@@ -26,6 +26,20 @@ P2: Processor 2 <br>
    * Useful when sync operation is not too frequenct
 * Hardware cache coherence 
    * see next
+   
 ### Hardware cache coherence 
-Meed a new subjects?
-Read through 
+Use hardware to solve incoherence 
+*  Snoop protocal (bus-based)
+   * Write invalidation. See  setction 17.3 of  [ref3](#ref3). Common is comercial computer system. 
+   * Write broadcast. typical is write through. Each in algorighm. but heavy bus load.  no read miss
+* directory protocal 
+   * centralized controller that is part of meory controlle
+   *  peer-to-peer cache communication, good for system with larger processor numbers.
+   
+
+
+## Reference 
+
+<a name=ref1> 1. Computer Architecture. A quantitative Approach. 4ed </a>
+<a name=ref2> 2. 浙江大学《计算机体系结构课件》 </a>
+<a name=ref3> 3. Computer origanization and architecture 9ed. </a>
