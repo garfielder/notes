@@ -98,22 +98,13 @@ As one goes down the hierachy,  frequency of the memory access from processor do
    * set associate. Cache lines are divided into different sets, each sets contains 2/4/16/32/64 lines(or cache blocks), although each memory block can be mapped in a single block, but  hit rate is still high, bacause there are a number of  candicated lines for the memory block 
       * A set with N lines are named N-way cache
  
-### Cache Coherency
-#### Concept 
-Concept from  计算机体系结构量化的研究方法
-
+ 
 #### Cache Write policy 
 * Write through
     * Wemory write is written into both cache and main memory. 
 * Write back 
     * Memory writes eventually  goes into main memory 
-
-#### Cache in muli-core system
-
-
-Meed a new subjects?
-Read through 
-
+ 
 
 
 
