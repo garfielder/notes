@@ -5,15 +5,18 @@ Cache coherence ensures that multiple processor see a consistent view of memory.
 There are different discriplines for cache coherence. The strict it is, the more performance penaltiy there is: < br>
 * Every write operation appears to occur instantaneously
 * All processors sees the same sequence of changes of value for each separated oprand
-##  Formal defination
-* 
-##  Cache Write policy 
-* Write through
-    * Wemory write is written into both cache and main memory. 
-* Write back 
-    * Memory writes eventually  goes into main memory 
 
-##  Cache in muli-core system
+##  Formal defination
+X: An address in main memory  <br>
+P1: Processor 1 <br>
+P2: Processor 2 <br>
+-> : then  
+* P1 write int X ->  P1 read from X    ;  P1 read return P1 write
+* P1 write into X -> P2 read from  X    ; P2 read return P1 write 
+* P1 write A into X -> P2 write  B into X   ; Address is seen with A then with B
+
+##  Solution to memory incoherency
+ 
 
 
 Meed a new subjects?
