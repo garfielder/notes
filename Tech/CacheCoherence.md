@@ -16,8 +16,16 @@ P2: Processor 2 <br>
 * P1 write A into X -> P2 write  B into X   ; Address is seen with A then with B
 
 ##  Solution to memory incoherency
- 
-
-
+### Simple sulutions 
+* No Cache 
+   * Yes, really simple, but ...
+* Do not cache shared data
+   * Low performance if too many shared data. 
+   * Memory can be caterigoried as different types 
+* Software flush at stategic time
+   * Useful when sync operation is not too frequenct
+* Hardware cache coherence 
+   * see next
+### Hardware cache coherence 
 Meed a new subjects?
 Read through 
