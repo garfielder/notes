@@ -1,6 +1,6 @@
 # Cache Coherency
 ## Concept 
-Concept from  计算机体系结构量化的研究方法
+  
 Cache coherence ensures that multiple processor see a consistent view of memory. <Br>
 There are different discriplines for cache coherence. The strict it is, the more performance penaltiy there is: < br>
 * Every write operation appears to occur instantaneously
@@ -40,6 +40,6 @@ Use hardware to solve incoherence
 
 ## Reference 
 
-<a name=ref1> 1. Computer Architecture. A quantitative Approach. 4ed </a>
-<a name=ref2> 2. 浙江大学《计算机体系结构课件》 </a>
-<a name=ref3> 3. Computer origanization and architecture 9ed. </a>
+<a name=ref1> 1. Computer Architecture. A quantitative Approach. 4ed </a>  <br>
+<a name=ref2> 2. 浙江大学《计算机体系结构课件》 </a> <br>
+<a name=ref3> 3. Computer origanization and architecture 9ed. </a> <br>
