@@ -47,10 +47,6 @@ proc - process information pseudo-file system
 (http://linux.die.net/man/5/proc)
 
 ### Context Switch and system call
-
-
-## Programming  Process
-### System Call 
 Be used to request access to the resource of the machine , communicate with other running programs, and to start new process. 
 
 Categories:<br>
@@ -65,6 +61,9 @@ Categories:<br>
 * others
 
 Many standard library functions are built on tops of system call. such as malloc/fopen/sleep. See section 7.2 of [book 1](#system)
+
+## Programming  Process
+
 
 
 
