@@ -59,6 +59,7 @@ Categories:<br>
 * Process
   * fork/exec
 * others
+See 2.4.1 of [book 1](#system)
 
 Many standard library functions are built on tops of system call. such as malloc/fopen/sleep. See section 7.2 of [book 1](#system)
 
@@ -85,3 +86,4 @@ Green threads cannot utilize multi-core, it always runs on the same Core in a si
 
 <a name='system'> 1. Avi Silberschatz.  Operating System Concepts.  Wiley publishing,  Ninth Edition, 2013.  </a> <br>
 <a name='ref2'>   2. http://www.cnblogs.com/01picker/p/4449322.html  </a>
+<a name='program'> 3. System Programming with C and unix. Addison-wesley. 1st ed. 2009 </a>
