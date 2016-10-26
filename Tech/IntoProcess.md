@@ -62,7 +62,10 @@ Categories:<br>
   * open/read/write/close
 * Process
   * fork/exec
-* other 
+* others
+
+Many standard library functions are built on tops of system call. such as malloc/fopen/sleep. See section 7.2 of (book 1)[#system]
+
 
 
 ### Basic Programming
