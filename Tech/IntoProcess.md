@@ -50,6 +50,21 @@ proc - process information pseudo-file system
 
 
 ## Programming  Process
+### System Call 
+Be used to request access to the resource of the machine , communicate with other running programs, and to start new process. 
+
+Categories:<br>
+*  Memory management
+  * mmap()
+* Time management 
+  * time()
+* File system
+  * open/read/write/close
+* Process
+  * fork/exec
+* other 
+
+
 ### Basic Programming
 ### Process communication
 ### atomic 
