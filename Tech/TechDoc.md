@@ -171,4 +171,17 @@ lockit: EXCH R2, 0(R1)
   * At any time, there is only one processor that can take the bus (or lock the bus)
   * Gain perforce by caching  lock variable and reduce write invalidate
   
-### Memory Conherence Model
+## System Design Tips
+* Mechanism
+  * How to do something
+  * The system could provide all interfaces to do all kinds of works, delivered together with a lot of parameters to control what will be done  
+* Policy 
+  * What will be done
+  
+Separation of Mechanism is important for flexibility. Policies are likely to changeover time. A good design to make mechanism insentive to policies change.
+  
+
+
+## Reference 
+1. Avi Silberschatz. Operating System Concepts. Wiley publishing, Ninth Edition, 2013. 
+
