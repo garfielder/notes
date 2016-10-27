@@ -93,3 +93,32 @@ view .gz file without gunzip
 set nowrap # disable line wrap
 set wrap   # enable line wrap
 ```
+
+## Special device 
+### /dev/null
+In some caes, we don't want any output from a program,  so we can redirect it into ```/dev/null ``` like a black hole
+``` csh
+echo "hi, you cannot see me" >& /dev/null
+```
+
+## redirection in Cshell
+With this program compiled as ```out```
+```c
+#include <stdio.h>
+int main()
+{
+    fprintf(stderr, "I am error\n");
+    fprintf(stdout, "I am good\n");
+}
+~      
+```
+
+* Redirect stdout message into stdoutfile, error message will still be shown.<br>
+```./out > stdoutfile ```
+
+* Redirect stdout and stderr into stdoutfile, error message will not shown<br>
+```./out >& stdoutfile ```
+
+* dump stdout and stderr message separately <br>
+```(out > stdoutfile)  >& stderrfile```
+
