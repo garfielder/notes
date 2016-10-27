@@ -157,6 +157,7 @@ int main()
 
 Often, the modules that detects error does not know what action to take. The recovery action  depends on the module that invoked the operation that the module that is performing the operation. \<\<section 2.4.2 of The C++ Programming Language\>\>
 
+
 * Three keywords 
 	* ```try```
 	* ```throw```
@@ -164,6 +165,8 @@ Often, the modules that detects error does not know what action to take. The rec
 * In the try block, we can use throw statement  through a exception message object. The boject is not mysterious, but can be int, char, string, or any user-defined class
 * When run into ```throw```,  current function will execute ```return``` imedediatly, and use destructor to clear local objects. 
 * If ```catch``` block is not found in high level funtion, above action will be repeated until find the matched ```catch``` block
+
+What kinds of objects can be thrown? Any type!  It could be int,string, or user-defined class. There are also some user defined exception object (*FIXME*).  Meanwhile, anyobject can be catched. 
 
 ### [Thread Safty](http://www.boost.org/community/exception_safety.html) -- No Memory Leak
 RAII --> Resource esource Acquisition Is Initialization .  Use shared_ptr when possible. So, resource can be well released even when exception is throw anywhere even in constructor. 
@@ -175,6 +178,10 @@ RAII --> Resource esource Acquisition Is Initialization .  Use shared_ptr when p
 	"copy and swap" is expensive in memory consumption
 * Basic Guarantee
 	* When exception happens, no memory leaked and the object is still in a usable state. 
+
+### Debug an exception
+
+http://www.sourceware.org/gdb/current/onlinedocs/gdb/Set-Catchpoints.html
 
 
 # ```inline ```
