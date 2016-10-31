@@ -122,3 +122,12 @@ int main()
 * dump stdout and stderr message separately <br>
 ```(out > stdoutfile)  >& stderrfile```
 
+## Process management 
+* ps
+    * -l : long 
+    * -F : extra long than -l
+    * -C <cmd_name>: view a specific command 
+    * -e : all process 
+    
+    ```ps -eLF | grep out```
+    
