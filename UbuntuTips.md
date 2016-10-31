@@ -129,5 +129,12 @@ int main()
     * -C <cmd_name>: view a specific command 
     * -e : all process 
     
-    ```ps -eLF | grep out```
+    ```
+    ps -eLF | grep out
+    
+    0 S user_name   25745 13681  0  76   0 -   921 wait     364   7 18:01 pts/0    00:00:00 ./out
+    1 S user_name   25746 25745  0  76   0 -   921 -        212   7 18:01 pts/0    00:00:00 ./out
+
+    
+    ```
     
