@@ -220,6 +220,24 @@ int main(){
     f(a);
 }
 ```
+## smart pointer 
+
+Used for RAII. Exception-safe. Avoid memory leaking.
+
+### shared_ptr
+1. How  initialize:
+```c++
+	shared_ptr<int> sp(new int(3));
+	shared_ptr<int> sp = make_shared<int>(3); // safe way
+```
+2. It can be copied, this is why it is named _shared_.  Multiple shared pointer can point to the same object instance. 
+when the last pointer is deleted, the instance itself is deleted automatically. 
+
+### unique_ptr
+1. compared with shared_ptr, an object can only be pointed to by a unique pointer. Copying a uniuqe ptr causes compilation error.  But std::move could work. 
+2. It is a light-weight smart pointer compared with shared_ptr. 
+3. make_unique is also available.
+
 
 ## Reference 
 1. <a name=cppbook> The C++ Programming Language. Fourth Edition. </a>
