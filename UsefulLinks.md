@@ -1,3 +1,4 @@
+## Useful Links 
 ### ISO CPP 
 <https://github.com/isocpp/CppCoreGuidelines>
 
@@ -16,3 +17,12 @@ http://www.vldb.org/   <br>
 
 ### Compute architecture
 (http://resources.infosecinstitute.com/system-address-map-initialization-in-x86x64-architecture-part-1-pci-based-systems/)
+
+
+
+## Misc Tips
+
+* Set window environment permantly 
+ ```
+  setx NAME 'garfielder'
+ ```
