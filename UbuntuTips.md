@@ -9,6 +9,10 @@
 WIFI:
 
 Broadcom BCM43142 802.11 bgn Wi-Fi M.2 Adapter
+```
+udo apt-get update 
+sudo apt-get install --reinstall bcmwl-kernel-source 
+```
 ### Chinese Input
 ### Flash plugin
     (http://www.linuxidc.com/Linux/2014-04/100490.htm)
