@@ -5,6 +5,10 @@
 ## Compile Kernel
 
 ## Useful APP
+###
+WIFI:
+
+Broadcom BCM43142 802.11 bgn Wi-Fi M.2 Adapter
 ### Chinese Input
 ### Flash plugin
     (http://www.linuxidc.com/Linux/2014-04/100490.htm)
