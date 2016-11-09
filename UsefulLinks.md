@@ -26,3 +26,10 @@ http://www.vldb.org/   <br>
  ```
   setx NAME 'garfielder'
  ```
+
+Windows short key:
+
+| Shot Key  | Function |
+| --------- | -------- |
+| windows + shift + N  | Open OneNote |
+| todo  | todo |
