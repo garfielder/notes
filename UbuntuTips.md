@@ -1,7 +1,6 @@
 # Ubuntu Tips
 
 ## Install Ubuntu
-
 ## Compile Kernel
 
 ## Useful APP
@@ -146,3 +145,9 @@ int main()
     
     ```
     
+## Tips
+
+* How to increase virutal memory size after installation 
+    * Sometime, we got error that says physical memory is not enough. So, we need to add swap file to allow more virtual memory
+    
+    https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04
