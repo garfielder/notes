@@ -208,3 +208,17 @@ exern "C"{
 }
 ```
 
+# const 
+
+For class member 
+```c++
+class A {
+public:
+	void fun(const Param&  param)  const ;
+};
+````
+
+The first constant means argument *param* cannot be changed. 
+The second const means  *fun* is not allowed to modify any class member 
+
+
