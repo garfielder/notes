@@ -222,3 +222,5 @@ The first constant means argument *param* cannot be changed.
 The second const means  *fun* is not allowed to modify any class member 
 
 
+# Prefer std::copy rather than memcpy
+
