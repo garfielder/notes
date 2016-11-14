@@ -224,3 +224,33 @@ The second const means  *fun* is not allowed to modify any class member
 
 # Prefer std::copy rather than memcpy
 
+```c++
+#include <iostream>
+#include <string.h> // for memcpy
+#include <algorithm>
+
+using namespace std;
+
+class A{
+public:
+    A(){}
+    A(const A& a){ cout << "in copy constructor (this " << this << ")" << endl;}
+    A& operator=(const A& a){ cout << "in copy assignment (this " << this << ")" << endl;}
+};
+
+int main()
+{
+    A  as[] = {A(), A()};
+    A  tar[2];
+
+    A a = as[0];
+
+   // memcpy(tar, as, sizeof(as)); // bitwise copy, unsafe, no copy assignment  called
+   std::copy(as, as+1, tar);       // safe, copy assignment called
+
+    cout <<  sizeof(A) << endl;
+
+    return 1;
+}
+~           
+```
