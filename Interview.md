@@ -204,3 +204,5 @@ int main()
 Why we use enum in c++? <br> compare with string. 
 
 If there is a type in enum variable, it is compile-error. If a typo in string, it will be a run-time error and hard to detect.!t
+
+string cannot be use in a ```switch-case```scenario.
