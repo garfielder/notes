@@ -151,3 +151,6 @@ int main()
     * Sometime, we got error that says physical memory is not enough. So, we need to add swap file to allow more virtual memory
     
     https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04
+
+* grep multiple  words
+    * grep  'worda\|wordb'
