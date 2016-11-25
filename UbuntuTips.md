@@ -156,3 +156,6 @@ int main()
     * grep  'worda\|wordb'
 
 ## UID 
+https://en.wikipedia.org/wiki/User_identifier
+todo find out.
+
