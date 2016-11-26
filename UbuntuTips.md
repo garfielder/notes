@@ -105,7 +105,8 @@ set wrap   # enable line wrap
 ### /dev/null
 In some caes, we don't want any output from a program,  so we can redirect it into ```/dev/null ``` like a black hole
 ``` csh
-echo "hi, you cannot see me" >& /dev/null
+echo "hi, you cannot see me" >& /dev/null  # tcsh
+echo "hi, you cannot see me" > /dev/null 2>&1 # bash
 ```
 
 ## redirection in Cshell
