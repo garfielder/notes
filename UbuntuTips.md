@@ -155,7 +155,13 @@ int main()
 * grep multiple  words
     * grep  'worda\|wordb'
 
-## UID 
-https://en.wikipedia.org/wiki/User_identifier
-todo find out.
+## Access control
+
+Access control is to determine which process can access which resource.
+
+A process is running on behalf of a user. 
+
+In Linux system, each user is assigned with a UID.  When the user starts a process,  there is a concept of 'EUID' which means effective UID. By default EUID equals UID, but a process may want to promote or degrade priviledge, and it can call setuid or seteuid (affect real uid and euid) to change current uid. 
+
+https://en.wikipedia.org/wiki/User_identifier <br>
 
