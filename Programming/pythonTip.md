@@ -133,7 +133,7 @@ From learning python
 An iterable objects includes list sequencial data type (list, string, tupple), some non-sequence type(dict, file) and any objects that has __getitem__ or __iter__ method. <br>
 
 An iterator object  =  an iterable object + Next() method <br>
-*iter(<iterable object>)* grants the magic Next() to iterable object
+iter(<iterable object>) grants the magic Next() to iterable object
 
 [here](http://www.cnblogs.com/bukekangli/p/5152451.html) for more
 
@@ -238,3 +238,22 @@ for dirName, subdirList, fileList in os.walk(rootDir, topdown=False):
         print dirName  + "/" + file
         
  ```
+ 
+## Regular Expression
+### re.sub
+ Command Usage:
+ 
+ ```python
+ re.sub(pattern, repl, string, count=0, flags=0)
+ ```
+
+ repl is NOT always string, but can be a function 
+ ```python
+  ## Regular Expression
+ ### re.sub
+ Command Usage:
+ 
+ ```python
+ re.sub(pattern, repl, string, count=0, flags=0)
+ ```
+ 
