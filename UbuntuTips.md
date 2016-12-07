@@ -101,6 +101,10 @@ set nowrap # disable line wrap
 set wrap   # enable line wrap
 ```
 
+### Generate List
+
+http://vim.wikia.com/wiki/Increasing_or_decreasing_numbers
+
 ## Special device 
 ### /dev/null
 In some caes, we don't want any output from a program,  so we can redirect it into ```/dev/null ``` like a black hole
