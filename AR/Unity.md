@@ -34,3 +34,18 @@ public class ExampleClass : MonoBehaviour {
 ```
 https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.LoadScene.html
 
+
+Mouse and Keyboard
+
+```c#
+void Update() {
+        if (Input.GetMouseButtonDown(0))
+            Debug.Log("Pressed left click.");
+        
+        if (Input.GetMouseButtonDown(1))
+            Debug.Log("Pressed right click.");
+        
+
+        
+    }
+```
