@@ -11,3 +11,9 @@ https://unity3d.com/cn/learn/tutorials
 API<br>
 
 https://docs.unity3d.com/ScriptReference/Application.LoadLevel.html
+
+
+## Tips
+### Material 
+
+Create Material : assets --> create --> material
