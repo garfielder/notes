@@ -16,13 +16,13 @@ https://docs.unity3d.com/ScriptReference/Application.LoadLevel.html
 ## Tips
 ### Material 
 
-Create Material : assets --> create --> material
+Create Material : assets --> create --> material <br>
 To assign material to a gameobject, just drag the material in the assets in Project view into the object
 
 ### texture 
 Method one: <Br>
-1. Create a subdirectory with name "textures". optional. 
-2. right click 'texture`, select 'import New asset', unfortunatly, only one texture can be loaded onetime. 
+   1. Create a subdirectory with name "textures". optional. 
+   2. right click 'texture`, select 'import New asset', unfortunatly, only one texture can be loaded onetime. 
 
 ### Script
 
