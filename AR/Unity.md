@@ -70,3 +70,14 @@ public class rotate : MonoBehaviour {
 
 ```
 
+```c#
+
+	private float theSpeed = 5.0f;
+	void Update () {
+        	// Rotate the object around its local X axis at 1 degree per second
+		// myVec controls how to do self rotation
+		Vector3 myVec = new Vector3(1.0f, 1.0f, 0.0f);
+        	transform.Rotate(myVec * Time.deltaTime * theSpeed);
+	}
+```
+
