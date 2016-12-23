@@ -55,3 +55,18 @@ void Update() {
         
     }
 ```
+
+
+```c#
+
+public class rotate : MonoBehaviour {
+	// Update is called once per frame
+	
+	private float theSpeed = 5.0f;
+	void Update () {
+        	// Rotate the object around its local X axis at 1 degree per second
+        	transform.Rotate(Vector3.right * Time.deltaTime * theSpeed);
+	}
+
+```
+
