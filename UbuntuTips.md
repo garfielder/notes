@@ -170,3 +170,21 @@ In Linux system, each user is assigned with a UID.  When the user starts a proce
 
 https://en.wikipedia.org/wiki/User_identifier <br>
 
+
+## Unix Signal
+Signal is a limited form of inter-process communication in Unix or Unix-like system. It is an a *asynchronous* notification btween process and threads 
+
+https://en.wikipedia.org/wiki/Unix_signal
+
+### SIGPIPE
+The SIGPIPE signal is sent to a process when it attempts to write to a pipe without a process connected to the other end. 
+See: 
+
+```python
+# Is it to avoid p1 to because zombie process?
+p1 = Popen(["dmesg"], stdout=PIPE)
+p2 = Popen(["grep", "hda"], stdin=p1.stdout, stdout=PIPE)
+p1.stdout.close()  # Allow p1 to receive a SIGPIPE if p2 exits. 
+output = p2.communicate()[0]
+```
+
