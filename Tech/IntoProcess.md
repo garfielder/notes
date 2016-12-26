@@ -71,6 +71,7 @@ Many standard library functions are built on tops of system call. such as malloc
 ### Basic Programming
 ### Process communication
 ### atomic 
+*atomic*: An operation to an atomic type is performed by a single process or thread without interence by other thread or process
 
 ## Thread 
 ###  Green Thread 
