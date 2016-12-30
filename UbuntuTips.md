@@ -100,6 +100,16 @@ view .gz file without gunzip
 set nowrap # disable line wrap
 set wrap   # enable line wrap
 ```
+### non-greedy search 
+
+Instread of using 
+```
+/.*
+```
+using 
+```
+/.\{-}
+```
 
 ### Generate List
 
