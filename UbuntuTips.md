@@ -198,3 +198,14 @@ p1.stdout.close()  # Allow p1 to receive a SIGPIPE if p2 exits.
 output = p2.communicate()[0]
 ```
 
+## NFS on Ubuntu
+
+### Server side 
+*Install  nfs-kernel-server* 
+
+sudo apt-get install nfs-kernel-server 
+
+*Export your file by adding into /etc/exports, there are already example in that file*
+
+### client side 
+``` mount <server_IP>:/home/lyq/exported_directory   /mnt ```
