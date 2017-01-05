@@ -207,6 +207,8 @@ sudo apt-get install nfs-kernel-server
 
 *Export your file by adding into /etc/exports, there are already example in that file*
 
+*Restart NFS service*
+ ```sudo service nfs-kernel-server start```
 ### client side 
 ``` mount <server_IP>:/home/lyq/exported_directory   /mnt ```
 ## Host name 
