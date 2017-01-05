@@ -223,3 +223,9 @@ hostname
    3. ``` sudo reboot```
 
 reference : https://www.cyberciti.biz/faq/ubuntu-change-hostname-command/
+
+
+## /etc/rc.local
+
+A place to put shell command that runs at bootup time.  .cshrc or .bashrc does is called during user login time, which does not meet the requirement. 
+
