@@ -209,3 +209,15 @@ sudo apt-get install nfs-kernel-server
 
 ### client side 
 ``` mount <server_IP>:/home/lyq/exported_directory   /mnt ```
+## Host name 
+*check host name*<br>
+```
+hostname
+```
+
+*Modify host name*
+   1. ```sudo vim /etc/hostname # replace old name with new name ```
+   2. ``` sudo vim /etc/hosts ``` # modify old name with new name```
+   3. ``` sudo reboot```
+
+reference : https://www.cyberciti.biz/faq/ubuntu-change-hostname-command/
