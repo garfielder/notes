@@ -198,9 +198,11 @@ p1.stdout.close()  # Allow p1 to receive a SIGPIPE if p2 exits.
 output = p2.communicate()[0]
 ```
 
-## NFS on Ubuntu
+## Share folders 
+### Between Linux
+**Server side** 
 
-### Server side 
+
 *Install  nfs-kernel-server* 
 
 sudo apt-get install nfs-kernel-server 
@@ -209,8 +211,20 @@ sudo apt-get install nfs-kernel-server
 
 *Restart NFS service*
  ```sudo service nfs-kernel-server start```
-### client side 
+ 
+**client side**
+
+
 ``` mount <server_IP>:/home/lyq/exported_directory   /mnt ```
+
+
+### Ubunut access windows shared folder
+   1. Install cifs  so that mount recognize [rifs](https://technet.microsoft.com/en-us/library/cc939973.aspx) format
+   ```sudo apt-get install cifs-utils```
+   2. Mount remote shared folder from a windows machine 
+    ```sudo mount -t cifs -o username=richli //10.237.169.126/shared /mnt/winfolder```
+
+
 ## Host name 
 *check host name*<br>
 ```
