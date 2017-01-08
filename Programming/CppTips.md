@@ -25,7 +25,58 @@ See more in <<The C++ Programming Languages>>
 put a newed pointer into shared_ptr  in a single sentence.  Otherwise exception would cause memory leak 
 
 
+# Function Object 
+**Function Object** is an object that  looks like a typical function 
 
+```c++
+struct TwoOperand
+{
+    void operator()(int a, int b)
+    {
+        cout << "sum of a + b is " << a + b << endl;
+    }
+};
+
+int main()
+{
+    TwoOperand  add;
+    add(3, 4); 
+}
+```
+
+Compared with funciton, it is more fanstastic compared with function, e.g, it can carry internal state. For example, we can update above program into something below 
+```c++
+
+enum OPERATOR{
+    ADD, 
+    SUB,
+    MUL
+};
+
+struct TwoOperand
+{
+    OPERATOR  _opType;
+    TwoOperand(OPERATOR opType=ADD){_opType = opType;}
+    void operator()(int a, int b)
+    {
+        if (ADD == _opType)
+            cout << " a + b is " << a + b << endl;
+        else if (SUB == _opType)
+            cout << "a - b is " << a - b << endl;
+        else{
+            cout << "TODO" << endl;
+        }
+    }
+};
+
+int main()
+{
+    TwoOperand  add;
+    TwoOperand  sub(SUB);
+    add(3, 4); 
+    sub(10, 4); 
+}
+```
 ## Tips to design a class 
 * DONOT expected to return an reference
 	* It may refer to an local variable, that will be destroied soon
