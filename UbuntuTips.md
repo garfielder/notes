@@ -260,4 +260,4 @@ The format of DISPLAY environment variable is '\<hostname\>:\<display_number\>.\
 
 Redirect DISPLAY var, and pointing to above display server 
 
-```setenv DIPLAY \<THE_HOST_INABOVE_CASE\>:\<DISPLAY_NUMBER\>.\<SCREEN_NUMBER\>```
+```setenv DIPLAY <THE_HOST_INABOVE_CASE>:<DISPLAY_NUMBER>.<SCREEN_NUMBER>```
