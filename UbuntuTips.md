@@ -243,3 +243,19 @@ reference : https://www.cyberciti.biz/faq/ubuntu-change-hostname-command/
 
 A place to put shell command that runs at bootup time.  .cshrc or .bashrc does is called during user login time, which does not meet the requirement. 
 
+
+## Open GUI for remote server 
+**On Local server**
+```
+shtcoredev:~> echo $DISPLAY
+localhost:12.0
+
+xhost + # allow X server access from all clients
+```
+
+The format of DISPLAY environment variable is '<hostname>:<display_number>.<screen_number>' 
+
+**On Remote Server**
+Redirect DISPLAY var, and pointing to above display server 
+
+```setenv DIPLAY <THE_HOST_INABOVE_CASE>:<DISPLAY_NUMBER>.<SCREEN_NUMBER>```
