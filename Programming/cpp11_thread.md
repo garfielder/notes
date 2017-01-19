@@ -13,3 +13,5 @@ Will link to my sanity test after checked into github
  condition_variable::wait(unique_lock)   | Waiting for a event, release the lock while waiting,  if notified, re-acquire the lock
  condition_varible::notify()| Notify above wait action
 
+## TODO
+What is inside mutex/condition_variable in c++11, compared with pthread
