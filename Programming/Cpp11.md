@@ -39,7 +39,8 @@ get the type of variable and return the type. The expression is resolved in comp
 
 ```
 
-## Lamda function 
+##  Lamda function
+<a name="Lamda"> </a>
 Anonymous  function. The concept is is python for a long time. It provided a fast way of creating functions. 
 Python's lambda expression is simple, just remove the function name. But C++ lambda support is a bit difficult, it also has a concept named 'capture list', which are names in local environment
 
