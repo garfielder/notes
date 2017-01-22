@@ -18,8 +18,8 @@ https://github.com/garfielder/notes/blob/master/Programming/Cpp11.md#Lamda
 https://github.com/garfielder/notes/blob/master/Programming/CppTips.md#functionObj
 
 ### Bind Expression
-See here 
-
+FIXME: pointing to studio/cpp/boost/main.cpp <br>
+Return a function object based on an existing function or member functions, with argument bound 
 
 ## Involvement of Pogramming Paradigms
 
