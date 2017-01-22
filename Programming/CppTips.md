@@ -1,3 +1,25 @@
+## Callable Target
+### Function 
+The most typical form of callable target
+```
+int fun(int arg1){
+    ...
+}
+
+typedef int (*FUNC_TYPE)(int); 
+
+FUNC_TYPE funVar = fun;
+```
+
+###  Lambda Expression 
+https://github.com/garfielder/notes/blob/master/Programming/Cpp11.md#Lamda
+
+### Function Object
+https://github.com/garfielder/notes/blob/master/Programming/CppTips.md#functionObj
+
+### Bind Expression
+See here 
+
 
 ## Involvement of Pogramming Paradigms
 
@@ -26,6 +48,7 @@ put a newed pointer into shared_ptr  in a single sentence.  Otherwise exception 
 
 
 # Function Object 
+<a name="functionObj"></a>
 **Function Object** is an object that  looks like a typical function 
 
 ```c++
