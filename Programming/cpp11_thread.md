@@ -15,11 +15,12 @@ Will link to my sanity test after checked into github
  
 ## How to return a future value
 
-primise
+### primise
 
-packaged_task
-
-async
+### packaged_task
+Similar to a std::function object, I can be called like a  function. The difference is that, packaged_task could return a asynchronous result. 
+But funciton object cannot. 
+### async
 
 difference of them 
 
