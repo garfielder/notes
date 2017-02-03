@@ -1,5 +1,11 @@
 #CPP11  Cocurrent Programming
 
+## Concurency Concept
+  Name          | DESC		
+  ------------- | -------------
+  volatile      | Tell compiler not to optmize it
+ lock-free      | Simply speaking, no mutex or lock. More precisly, one thread does not block each other. See [here](http://preshing.com/20120612/an-introduction-to-lock-free-programming/) for more
+
 ## Basic Sample
 Will link to my sanity test after checked into github
 
