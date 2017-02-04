@@ -13,6 +13,7 @@ Will link to my sanity test after checked into github
 ## Key words 
 
 **Waittinf for event**
+
   Name          | DESC		
   ------------- | -------------
   unique_lock(mutex)  | a wrapper of lock, or similar to a unique_ptr applied to a mutex, mutex.lock() is called in constructor and mutext.unlock is call in destructor
@@ -21,6 +22,7 @@ Will link to my sanity test after checked into github
  
  
  **this_thread**
+ 
   Name          | DESC		
   ------------- | -------------
   yield   |  give OS a hint to reschedule execution of threads, allow other thread to run
