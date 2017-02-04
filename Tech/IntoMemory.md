@@ -96,6 +96,8 @@ As one goes down the hierachy,  frequency of the memory access from processor do
       * Low missing rate.  but complex control logic. Only available for small cache
    * direct assiciative. Each meory block is mapped into a specific cache line. Easy to implement, but high missing rate. 
    * set associate. Cache lines are divided into different sets, each sets contains 2/4/16/32/64 lines(or cache blocks), although each memory block can be mapped in a single block, but  hit rate is still high, bacause there are a number of  candicated lines for the memory block 
+      * a memory block can be mapped into one set. (direct assiciative at set level)
+      * fully asociative inside a set. 
       * A set with N lines are named N-way cache
  
  
