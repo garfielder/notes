@@ -9,7 +9,12 @@
 ## Basic Sample
 Will link to my sanity test after checked into github
 
-## Memory model 
+## Atomic and  Memory model 
+
+For atomic concept, See https://github.com/garfielder/notes/blob/master/Tech/TechDoc.md#synchronization
+Atomic operation relies on hardware support to avoid data race small data. It is an way for lock-free programming.  Accessing atomic variable introduce inter-thread synchronzation  and order non-atomic memory access.  While **How to order** them are defined by std::memory_order. 
+
+
 ## Key words 
 
 **Waittinf for event**
