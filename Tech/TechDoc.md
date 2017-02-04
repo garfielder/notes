@@ -170,6 +170,8 @@ lockit: EXCH R2, 0(R1)
 * One rule for atomic operation
   * At any time, there is only one processor that can take the bus (or lock the bus)
   * Gain perforce by caching  lock variable and reduce write invalidate
+* Coherence Requirement 
+  * WW/RR/WR/WR (https://github.com/garfielder/notes/blob/master/Tech/TechDoc.md#synchronization)
   
 ## System Design Tips
 * Mechanism
