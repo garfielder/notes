@@ -182,7 +182,9 @@ lockit: EXCH R2, 0(R1)
   
 Separation of Mechanism is important for flexibility. Policies are likely to changeover time. A good design to make mechanism insentive to policies change.
   
-
+## Virtual Memory 
+   * How to customize page attribute
+      * PAT and MTRR
 
 ## Reference 
 1. Avi Silberschatz. Operating System Concepts. Wiley publishing, Ninth Edition, 2013. 
