@@ -46,7 +46,9 @@ Similar to a std::function object, I can be called like a  function. The differe
 But funciton object cannot. 
 ### async
 
-difference of them 
+It can submit a callable object aynchronously. notice, do not submit a packaged task in aync. because async created a packaged_task internally. 
+
+
 
 
 
