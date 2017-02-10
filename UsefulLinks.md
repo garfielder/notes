@@ -13,7 +13,19 @@ http://smealsearch2.psu.edu/index.html/  <br>
 http://portal.acm.org/portal.cfm  <br>
 http://www.vldb.org/   <br>
 
+
+
 [reference](http://www.blogjava.net/liyong/archive/2010/01/07/84371.html)
+
+面试储备：
+
+   1. https://www.careercup.com/   -----适用于较简单的公司面试，面试题相对简单
+   2.  https://leetcode.com/    -----适用于较难公司面试，面试题相对难
+
+论文查看：
+
+    1. dblp :  http://dblp.uni-trier.de/
+
 
 ### Compute architecture
 (http://resources.infosecinstitute.com/system-address-map-initialization-in-x86x64-architecture-part-1-pci-based-systems/)
