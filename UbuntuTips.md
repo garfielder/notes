@@ -78,6 +78,15 @@ rsycn -vzrL  uname@server:\<src_path\> \<dst_path\>
 -r : recursive including all sub-directories <br>
 -L : copy links as files <br>
 
+
+*rsync without password
+On local server:
+   1. ssh-keygen # Use default setting
+   2. ssh-copy-id -i ~/.ssh/id_rsa.pub \<remote host\>  # IP on remote host
+   3. Now ssh and rsync requires no password
+
+https://superuser.com/questions/555799/how-to-setup-rsync-without-password-with-ssh-on-unix-linux
+
 ### chmod
 
 If a folder is copied from other location, you may met problems like "cannot chdir from <cur_dir> to <dst_dir> : Permission denied. Please use this commnd to fix: <br>
