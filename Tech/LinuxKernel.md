@@ -8,11 +8,7 @@
    
 ## Purpose 
    * Business
-      * Help to understand HwLinLinuxRunner/Diag issue and potential request
-         * 64 bit BAR issue
-         * How ATC works
-         * TCore kernel works
-         * Virtualization 
+
    * Career
       * System Design skill
       * Spot light for furhter job
