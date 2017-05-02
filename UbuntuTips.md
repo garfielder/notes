@@ -2,7 +2,23 @@
 
 ## Install Ubuntu
 ## Compile Kernel
+link:http://mitchtech.net/compile-linux-kernel-on-ubuntu-12-04-lts-detailed/
+### Install tools
+sudo apt-get install git-core libncurses5 libncurses5-dev libelf-dev asciidoc binutils-dev linux-source libncurses5 libncurses5-dev fakeroot build-essential crash kexec-tools makedumpfile kernel-wedge kernel-package
 
+### Download linux kernel and extract it
+Website https://www.kernel.org/
+I choose latest stable one :
+wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.11.tar.xz
+```
+    $xz -d ***.tar.xz
+    $tar -xvf  ***.tar
+```
+### Compile 
+   1. cd <kernel-dir>/linux-4.11
+   2. cp -vi /boot/config-`uname-r`  .config  // reuse curernt configure file
+   3. make oldconfig ; //  parse .config, need to select feature, press enter if unsure
+   4. make -j4 
 ## Useful APP
 ###
 WIFI:
