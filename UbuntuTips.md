@@ -222,7 +222,7 @@ sudo apt-get install nfs-kernel-server
  ```sudo service nfs-kernel-server start```
  
 **client side**
-
+sudo apt-get install nfs-common
 
 ``` mount <server_IP>:/home/lyq/exported_directory   /mnt ```
 
