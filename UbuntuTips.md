@@ -4,7 +4,7 @@
 ## Compile Kernel
 link:http://mitchtech.net/compile-linux-kernel-on-ubuntu-12-04-lts-detailed/
 ### Install tools
-sudo apt-get install git-core libncurses5 libncurses5-dev libelf-dev asciidoc binutils-dev linux-source libncurses5 libncurses5-dev fakeroot build-essential crash kexec-tools makedumpfile kernel-wedge kernel-package
+sudo apt-get install git-core libncurses5 libncurses5-dev libelf-dev asciidoc binutils-dev linux-source libncurses5 libncurses5-dev fakeroot build-essential crash kexec-tools makedumpfile kernel-wedge kernel-package libssl-dev
 
 ### Download linux kernel and extract it
 Website https://www.kernel.org/
