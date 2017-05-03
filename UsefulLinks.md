@@ -13,6 +13,8 @@ http://smealsearch2.psu.edu/index.html/  <br>
 http://portal.acm.org/portal.cfm  <br>
 http://www.vldb.org/   <br>
 
+### Public Class
+复变函数：http://www.icourses.cn/coursestatic/course_7104.html
 
 
 [reference](http://www.blogjava.net/liyong/archive/2010/01/07/84371.html)
