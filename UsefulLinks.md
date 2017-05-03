@@ -4,6 +4,8 @@
 
 compiler : <http://www3.ntu.edu.sg/home/ehchua/programming/cpp/gcc_make.html>
 
+### 视频教程
+http://video.1kejian.com/video/?26249-0-29.html  # 傅立叶变换
 
 ### Papers on computer science 
 http://citeseer.ist.psu.edu/ <br>
