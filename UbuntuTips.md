@@ -1,6 +1,10 @@
 # Ubuntu Tips
 
 ## Install Ubuntu
+*Tools to install from scratch*
+sudo apt-get install openssh-server  // so that it can be ssh server
+sudo apt-get install nfs-common      // so that it can mount nfs file system
+
 ## Compile Kernel
 link:http://mitchtech.net/compile-linux-kernel-on-ubuntu-12-04-lts-detailed/
 ### Install tools
