@@ -54,6 +54,8 @@ Within processes:  communication between processes are expensive/slow/complex. S
 
 Within threads: lite process , but be careful for data shares. 
 
+People uses cocurrency for separation of concerns(separation of independent functions)  and performance ( on a multiple core system)
+
 
 
 ## TODO
