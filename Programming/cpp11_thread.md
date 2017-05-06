@@ -48,7 +48,11 @@ But funciton object cannot.
 
 It can submit a callable object aynchronously. notice, do not submit a packaged task in aync. because async created a packaged_task internally. 
 
+## Cocurrency 
 
+Within processes:  communication between processes are expensive/slow/complex. Starting a process is of overhead. But provided good data protection. Diffent process can communcates through network.
+
+Within threads: lite process , but be careful for data shares. 
 
 
 
