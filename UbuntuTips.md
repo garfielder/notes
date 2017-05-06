@@ -52,6 +52,8 @@ sudo apt-get install --reinstall bcmwl-kernel-source
 |edit a file | p4 edit file/files | git add <modified_files>; git comment -a -m "message" | git add then commit |
 |Move a file | p4 delete file; p4 add <other_dir>/file|git mv file \<other_dir\>||
 |submit  to remove depot| p4 submit | git push -u origin master| |
+| revert everyting| p4 revert ...| git revert ||
+|check opened files | p4 opened ... | git status||
 
 ## Kernel
 
