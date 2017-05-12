@@ -26,7 +26,7 @@ Two ways to fix: <br>
 2. dir  \<new_directory_that_soruce_files_are_located\>   ; this adds the path into gdb source directories
 
 ## GDB init file
-   * .gdbini  
+   * .gdbinit
       * GDB loads it during startup
    * gdb -x <init_file> # specify init file explicitly
    * gdb -ex "gdb command"
