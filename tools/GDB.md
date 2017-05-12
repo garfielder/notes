@@ -18,5 +18,10 @@ __*On Host server*__:  <br>
 
 
 
+## Find source files
+By default , an executable  records abosolute path of source files. If executable+soures are moved to a new location,   GDB cannot find the source files.
 
+Two ways to fix: <br>
+1. set substitute-path  \<src-path\>    \<dst-path\>   <br>
+2. dir  \<new_directory_that_soruce_files_are_located\>   ; this adds the path into gdb source directories
 
