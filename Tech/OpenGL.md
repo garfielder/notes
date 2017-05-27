@@ -3,6 +3,14 @@
 
 ## Useful links 
 
+
+## Texture
+|Name | Explain|
+|------|-|
+|filter| Determine texture color for a textured mapped pixel, options are nearst neighour/bileaner/Anisotropic|
+|sample| |
+
+
 ### Download glut library
 
 (https://sourceforge.net/projects/freeglut/?source=typ_redirect)
