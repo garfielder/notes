@@ -17,7 +17,7 @@ http://www.vldb.org/   <br>
 
 ### Public Class
 复变函数：http://www.icourses.cn/coursestatic/course_7104.html
-
+http://video.1kejian.com/video/?761-0-6.html
 
 [reference](http://www.blogjava.net/liyong/archive/2010/01/07/84371.html)
 
