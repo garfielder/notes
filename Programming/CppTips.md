@@ -330,8 +330,10 @@ int main()
 ```
 ## Behind STL container
 
-std::vector, is actually an array. And we can get the  address iTH elements by ```&vec[0] + i * sizeof(elem)```
+*std::vector* :  actually an array. And we can get the  address iTH elements by ```&vec[0] + i * sizeof(elem)```
 
-std::map & std::set,  implemented by highly banlanced tree such as AVL  or Red-Black tree.  The worst insert and  find time complexity is O(logn)
+*std::list*:  doubled linked list
 
-std::unordered_set,  implemented by hash table,  can be indexed by their value.  The find and insert can be done with O(1) .
+*std::map & std::set*:  implemented by highly banlanced tree such as AVL  or Red-Black tree.  The worst insert and  find time complexity is O(logn)
+
+*std::unordered_set*:  implemented by hash table,  can be indexed by their value.  The find and insert can be done with O(1) .
