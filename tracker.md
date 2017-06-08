@@ -24,7 +24,8 @@
  1. Linux kernel mode driver
  2. GFX review:openGL/real-time rendering
  3. library android and ARM, select a few topic 
-
+ 4. Summary of TCore enhancement
+ 5. Design pattern
 
 
 Purose:
