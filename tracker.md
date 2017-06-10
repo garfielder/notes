@@ -26,6 +26,7 @@
  3. library android and ARM, select a few topic 
  4. Summary of library enhancement
  5. Design pattern  in our library
+ 6. What belongs to OS and what belongs to sysmem
 
 
 Purose:
