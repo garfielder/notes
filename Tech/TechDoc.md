@@ -20,47 +20,26 @@
 It describes how CPU and GPU shares memory
 
 
+# Compiling and linking
 
-# OpenCL 
-## Models
-What is platform : The host plus a collection of devices
-### Platform models
-* One host, the big boss that controls every thing. 
-* A number of compute devices, it can be a GPU or a multi-core GPU, or somethign else
-* There are CUs in different Devices, CU is composed of PE
-* I think low level drier could report all devices and CU information
+*Compiling* :   <br>
 
-![platform module](http://www.rastergrid.com/blog/wp-content/uploads/2010/11/opencl_platform_model.png)
+Compiler converts C/C++ source into machine code, named ".o" or ".obj".   For each c++ source code file,  compiler compiles it into an object file.  The object file is not a executable. 
 
-### Executation Model
-* Kernel Program that execute on host that controls everything. The ```main``` function  in source code. 
-* Kernels that executes on one or more devices.
-   * work-item: one kernel instance has global Instance Id. will be process by one kernel on one PE. One workitem process one elements in the NDRange. 
-   * NDRange defines the input space, it could be N dimentional tupple (n = 1,2,3)
-   * Workgroup : a group of workitems. workitems in a group runs concrurently  on the same CUs and shares same local memory. 
-* A few concept
-   * A context, stands for one application, has its own command queues, available devices, kernels , memorys , program objects
-   * Kernel: Functions to run on compute devices
-   * Program objects: program source and executable that implement the kernels
-   * command queue: attached to a device, that is used to queue a set of operations. 
+The compiler does not look at more than one file at a time.  If it couldn't find a funciton defination in current file, it asusmes it in another. 
 
 
+*Linking*: <br>
+Linker converts the object files and pre-compiled libraries  into  a single executable  that can run on machine.  The linker would  try to to find all the definations that was mentioned. 
 
-[doc] : https://www.khronos.org/assets/uploads/developers/library/2012-pan-pacific-road-show-June/OpenCL-Details-Taiwan_June-2012.pdf
-### Event
-Event is an operation. It could depends on other event list, it will also block other event to proceed. The event can push into the command queue. 
+## Links 
+1. http://www.cprogramming.com/compilingandlinking.html
+2. 
 
-## Some API
-#  Parallel Computing
-CUDA stands for Computer Unified Device Architecture。
-http://www.nvidia.cn/content/PDF/fermi_white_papers/P.Glaskowsky_NVIDIA's_Fermi-The_First_Complete_GPU_Architecture.pdf
-
-
-One workgroup is running one streaming multiple processor(SM). Each SM contains 32 CUDA core. It has one FP unit and one Float unit.
-
-[Good Link for AMD GPU involvment](http://www.expreview.com/17961-all.html)
-
-
+*benifits of the separation*<br
+1. Reduce the complexity. Devide the work into two parts
+2. make conditional compilation possible, so that one file changed, we don't have to recompile all of the other files
+2. reuse other precompiled libraries 
 
   
 ## Virtual Memory 
