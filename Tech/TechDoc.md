@@ -21,7 +21,7 @@ It describes how CPU and GPU shares memory
 
 
 # Compiling and linking
-
+## Compile and Link
 *Compiling* :   <br>
 
 Compiler converts C/C++ source into machine code, named ".o" or ".obj".   For each c++ source code file,  compiler compiles it into an object file.  The object file is not a executable. 
@@ -32,16 +32,21 @@ The compiler does not look at more than one file at a time.  If it couldn't find
 *Linking*: <br>
 Linker converts the object files and pre-compiled libraries  into  a single executable  that can run on machine.  The linker would  try to to find all the definations that was mentioned. 
 
-## Links 
-1. http://www.cprogramming.com/compilingandlinking.html
-2. 
-
 *benifits of the separation*<br
 1. Reduce the complexity. Devide the work into two parts
 2. make conditional compilation possible, so that one file changed, we don't have to recompile all of the other files
 2. reuse other precompiled libraries 
+## Symbol 
+symbol table,   https://en.wikipedia.org/wiki/Symbol_table
+relacation 
 
-  
+to read 
+
+## Links 
+1. http://www.cprogramming.com/compilingandlinking.html
+2. 
+
+# Others 
 ## Virtual Memory 
    * How to customize page attribute
       * PAT and MTRR
