@@ -36,11 +36,28 @@ Linker converts the object files and pre-compiled libraries  into  a single exec
 1. Reduce the complexity. Devide the work into two parts
 2. make conditional compilation possible, so that one file changed, we don't have to recompile all of the other files
 2. reuse other precompiled libraries 
-## Symbol 
-symbol table,   https://en.wikipedia.org/wiki/Symbol_table
-relacation 
+## Symbol and relocation table
+### Memory layout of an obj file
+The following segment is stored in the object file itself
+* text segmant 
+* data segmant 
+The following segment is generated dynamically
+* Heap 
+* stack 
 
-to read 
+### symbol table 
+symbols in data segment uses relative addess inside the segment, the symbol table keeps track of the list of the symbols 
+
+### relocation table 
+keeps track of subset of instructions.
+
+###  relocation 
+
+for data and code segments, when the linker tries to link two or more object files together, it should be able to merge the text and data segment, and resovle the symbols (replace symbols with absolute address)
+
+https://stevenschmatz.gitbooks.io/eecs-370/Lecture_Notes/lecture_7.html
+https://en.wikipedia.org/wiki/Symbol_table
+
 
 ## Links 
 1. http://www.cprogramming.com/compilingandlinking.html
