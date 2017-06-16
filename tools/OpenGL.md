@@ -10,6 +10,15 @@
 |filter| Determine texture color for a textured mapped pixel, options are nearst neighour/bileaner/Anisotropic|
 |sample| |
 
+## APIs
+
+*glGen*
+```void glGenBuffers(GLsizei n, GLuint *buffers);```
+```void glGenTexture(GLsizei n, GLuint *buffers);```
+
+They just allocate unused name in forms of integers, not really allocate resource 
+
+
 
 ### Download glut library
 
