@@ -18,6 +18,11 @@
 
 They just allocate unused name in forms of integers, not really allocate resource 
 
+*glBind*
+```void glBindBuffer(GLenum target, GLuint buffer);```
+Buffer is the name created by ```glGenBuffer```
+
+really allocate memory at this step. 
 
 
 ### Download glut library
