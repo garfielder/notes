@@ -3,6 +3,18 @@
 ## Common
 
 ## Python Regular Expression
+*Match accross '\n' in a big string*
+
+Use ```re.S```
+```python
+stri = 
+'''
+li yong qing
+ni hao
+'''
+print re.search(r'li.*hao',  ' can you see me ', str, flags=re.S);
+```
+
 
 ## grep 
 ### Match a word rather than substring
