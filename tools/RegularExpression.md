@@ -11,11 +11,16 @@ stri =
 '''
 li yong qing
 ni hao
+ni hao
 '''
 print re.search(r'li.*hao',  ' can you see me ', str, flags=re.S);
 ```
 
 *Non-greedy match*
+Using ?
+```python
+re.match(r'li.*?', str)
+```
 
 
 ## grep 
