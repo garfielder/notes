@@ -5,7 +5,7 @@
 ## Python Regular Expression
 *Match accross '\n' in a big string*
 
-Use ```re.S```
+Use ```re.S``` ,  python versions should be >= 2.7
 ```python
 stri = 
 '''
@@ -14,6 +14,8 @@ ni hao
 '''
 print re.search(r'li.*hao',  ' can you see me ', str, flags=re.S);
 ```
+
+*Non-greedy match*
 
 
 ## grep 
