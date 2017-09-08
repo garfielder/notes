@@ -5,6 +5,13 @@
 sudo apt-get install openssh-server  // so that it can be ssh server
 sudo apt-get install nfs-common      // so that it can mount nfs file system
 
+*Setup VNC server*
+https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-14-04
+
+Notice, the desktop is ```startxfce4 ```
+
+
+
 ## Compile Kernel
 link:http://mitchtech.net/compile-linux-kernel-on-ubuntu-12-04-lts-detailed/
 ### Install tools
