@@ -2,7 +2,7 @@
 
 | Name                | Price    |     Pro    | con      | Link |
 |---------------------|----------|------------|----------|------|
-| 2016款 途安L 280TSI 手动舒适版| 14.28 |  空间大，车重安全，手动 |  丑/MPV  |http://www.autohome.com.cn/spec/25114/#pvareaid=101605|
+| 2016款 途安L 280TSI 手动舒适版| 14.28 |  空间大，车重安全，手动，真皮座椅 |  丑/MPV  |http://www.autohome.com.cn/spec/25114/#pvareaid=101605|
 
 
 
