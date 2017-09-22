@@ -3,7 +3,8 @@
 | Name                | Price    |     Pro    | con      | Link |
 |---------------------|----------|------------|----------|------|
 | 2016款 途安L 280TSI 手动舒适版| 14.28 |  空间大，车重安全，手动，真皮座椅 |  丑/MPV  |http://www.autohome.com.cn/spec/25114/#pvareaid=101605|
-| 2017款 三厢 15S 手动进取型　　　 |10.5　| 车长4.7宽2.7， 漂亮， 便宜　　　 |轻，动力不足|http://www.autohome.com.cn/spec/27689/#pvareaid=101605｜
+| 2017款 别克危狼 三厢 15S 手动进取型　　　 |10.5　| 车长4.7宽2.7， 漂亮， 便宜　　　 |轻，动力不足|http://www.autohome.com.cn/spec/27689/#pvareaid=101605｜
+ | 斯柯达 Yeti 2017款 TSI280 DSG创行版| 15| 性价比SUV， 动力足，空间大，车重 |　|http://www.autohome.com.cn/spec/27791/#pvareaid=2042249|
 
 
 # For 6.17 work
