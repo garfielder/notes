@@ -21,6 +21,9 @@ Atomic operation relies on hardware support to avoid data race small data. It is
 |--------------|-----|
 |memory_order_release| described a store operation, all variable (including non-atomic) before this store operations  cannot be reordered afterward, It is seen by other thread that acquires the same variable|
 
+good introduction:http://en.cppreference.com/w/cpp/atomic/memory_order#Release-Acquire_ordering
+
+
 http://en.cppreference.com/w/cpp/atomic/memory_order
 
 ## Key words 
