@@ -1,4 +1,4 @@
-#CPP11  Cocurrent Programming
+# CPP11  Cocurrent Programming
 
 ## Concurency Concept
   Name          | DESC		
@@ -15,6 +15,11 @@ For atomic concept, See https://github.com/garfielder/notes/blob/master/Tech/Tec
 Atomic operation relies on hardware support to avoid data race small data. It is an way for lock-free programming.  Accessing atomic variable introduce inter-thread synchronzation  and order non-atomic memory access.  While **How to order** them are defined by std::memory_order.    **order** may from compiler reordering or OS scheduling. 
 
 ```atomic```: do everyting or do nothing.  E.g.I like cooking, if  cooking is atoimc, it means when you ask me, I will say I  have started cooking or dinner is ready, you don't have chance to get a answer like " fish is ready, but  soup is not". Because, I was locked in the kichen at that point and you don't have chance to talk with me. 
+
+### Memory Order
+| Memory order | desc|
+|--------------|-----|
+|memory_order_release| described a store operation, all variable (including non-atomic) before this store operations  cannot be reordered afterward, It is seen by other thread that acquires the same variable|
 
 http://en.cppreference.com/w/cpp/atomic/memory_order
 
