@@ -9,6 +9,7 @@
 |　帕萨特　2017款 280TSI DSG尊雅版|15|　车大，配置一般，　安全性好|乞丐版，动力内饰弱，后备箱不如明锐|http://www.autohome.com.cn/spec/29314/#pvareaid=101605｜
 | 途观 2016款 280TSI 自动两驱丝绸之路风尚版  |14 |4.5米SUV，动力够，||http://www.autohome.com.cn/spec/27843/#pvareaid=2042251|
 |思域频道 2016款 220TURBO 手动豪华版 |13| 长度介于朗逸和速腾， 雷达影像全|日系车 |http://www.autohome.com.cn/spec/25891/#pvareaid=2042251 |
+|本田CR-V 2017款 240TURBO 手动两驱经典版 |17||||
 
 #  Car Preparation
 ## 选车
