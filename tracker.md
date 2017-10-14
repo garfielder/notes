@@ -53,6 +53,19 @@
  5. Design pattern  in our library
  6. What belongs to OS and what belongs to sysmem
 
+S: 手里剑<br>
+G: Gama <br>
+L: 地雷<br>
+Y：小樱花<br>
+M:门<br>
+DL:灯绿<br>
+DH:灯红<br>
+
+||||||S|DH|S|
+|-|-|-|-|-|-|-|-|
+|||||||GL|DL|
+|||||M|Y|||
+
 
 Purose:
 1. try something new and 有相同之处
