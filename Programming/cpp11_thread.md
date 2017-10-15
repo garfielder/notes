@@ -24,6 +24,12 @@ Atomic operation relies on hardware support to avoid data race small data. It is
 good introduction:http://en.cppreference.com/w/cpp/atomic/memory_order#Release-Acquire_ordering
 
 
+### Release-acquire and release-consume 
+The two ones are similar. <br>
+Release-acquire has a stronger constraint. The producer thread should not reorder any variable after release operation. <br>
+Release-consume hbas a week constraint.   producer only makes sure  only relevant variables to the tobe-released atomic  cannot be reordered. <br>
+
+
 http://en.cppreference.com/w/cpp/atomic/memory_order
 
 ## Key words 
