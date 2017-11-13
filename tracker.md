@@ -1,18 +1,3 @@
-S: 手里剑<br>
-G: Gama <br>
-L: 地雷<br>
-Y：小樱花<br>
-M:门<br>
-DL:灯绿<br>
-DH:灯红<br>
-
-|||||DL|S|DH|S|
-|-|-|-|-|-|-|-|-|
-||||||G|L|DL|
-|||||M|Y|fan|bird|
-
-
-
 
 # Car
 
