@@ -30,3 +30,5 @@ Two ways to fix: <br>
       * GDB loads it during startup
    * gdb -x <init_file> # specify init file explicitly
    * gdb -ex "gdb command"
+## Contine and ignore count
+> continue  <ignore_count>
