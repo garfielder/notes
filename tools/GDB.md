@@ -32,3 +32,8 @@ Two ways to fix: <br>
    * gdb -ex "gdb command"
 ## Contine and ignore count
 > continue  <ignore_count>
+
+## Print STL Vector
+blog.csdn.net/fdl19881/article/details/8710636
+
+https://sourceware.org/gdb/wiki/STLSupport
