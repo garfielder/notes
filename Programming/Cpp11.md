@@ -240,6 +240,18 @@ when the last pointer is deleted, the instance itself is deleted automatically.
 2. It is a light-weight smart pointer compared with shared_ptr. 
 3. make_unique is also available.
 
+##  Use chrono to count time interval 
 
+```c++
+#include <chrono>
+ std::chrono::time_point<std::chrono::system_clock> start, end;
+ start = std::chrono::system_clock::now();
+ // do something 
+ end = std::chrono::system_clock::now();
+ 
+    std::chrono::duration<double> elapsed_seconds = end - start;
+    std::cout << " elapsed time: " << elapsed_seconds.count() << "s\n";
+
+```
 ## Reference 
 1. <a name=cppbook> The C++ Programming Language. Fourth Edition. </a>
