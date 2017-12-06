@@ -33,6 +33,9 @@ Two ways to fix: <br>
 ## Contine and ignore count
 > continue  <ignore_count>
 
+## Always print hex
+set output-radix 16 
+
 ## Print STL Vector
 blog.csdn.net/fdl19881/article/details/8710636
 
