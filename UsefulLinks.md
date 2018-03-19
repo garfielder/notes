@@ -49,3 +49,7 @@ Windows short key:
 | --------- | -------- |
 | windows + shift + N  | Open OneNote |
 | todo  | todo |
+
+
+### cmake tutorial 
+https://www.johnlamp.net/cmake-tutorial-1-getting-started.html
