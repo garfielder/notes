@@ -304,3 +304,10 @@ The format of DISPLAY environment variable is '\<hostname\>:\<display_number\>.\
 Redirect DISPLAY var, and pointing to above display server 
 
 ```setenv DIPLAY <THE_HOST_INABOVE_CASE>:<DISPLAY_NUMBER>.<SCREEN_NUMBER>```
+## du 
+
+
+
+This command shows you the summarized size of hidden directories
+
+```du -hs .[^.]*```
