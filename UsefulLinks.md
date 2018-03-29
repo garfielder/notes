@@ -53,3 +53,6 @@ Windows short key:
 
 ### cmake tutorial 
 https://www.johnlamp.net/cmake-tutorial-1-getting-started.html
+
+Use CN doc: http://sewm.pku.edu.cn/src/paradise/reference/CMake%20Practice.pdf
+
