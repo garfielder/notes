@@ -253,5 +253,16 @@ when the last pointer is deleted, the instance itself is deleted automatically.
     std::cout << " elapsed time: " << elapsed_seconds.count() << "s\n";
 
 ```
+
+## traits
+### type traits
+Defined in standand library <type_traits>. Provided functions to determines the properties of types, genenrate new types. It is primiarily used in compile time.
+```
+is_pod<X>::value
+is_pod<X>()
+is_pointer<T>
+
+add_const<X> // try to add const to type X
+```
 ## Reference 
 1. <a name=cppbook> The C++ Programming Language. Fourth Edition. </a>
