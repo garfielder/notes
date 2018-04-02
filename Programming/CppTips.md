@@ -337,3 +337,38 @@ int main()
 *std::map & std::set*:  implemented by highly banlanced tree such as AVL  or Red-Black tree.  The worst insert and  find time complexity is O(logn)
 
 *std::unordered_set*:  implemented by hash table,  can be indexed by their value.  The find and insert can be done with O(1) .
+
+## Copy Elision
+```c++
+/* atexit example */
+
+#include <iostream>
+using namespace std;
+
+
+class MyClass{
+public:
+    MyClass() { cout << " In constructor " << endl;}
+    ~MyClass() { cout << " In destructor" << endl;}
+
+    MyClass(const MyClass&  other) { cout << " In copy constructor " << endl; }
+   
+    MyClass& operator= (const  MyClass& other) { cout << "In copy assignment " << endl; }
+    
+};
+
+MyClass GetClass()
+{
+    MyClass myclass;
+    cout <<" In Get Class, pointer is " << &myclass << endl;
+    return myclass;
+}
+
+int main(){
+    MyClass my = GetClass();
+    
+    // due to compiler optimization, my is the same object as defined in
+    // GetClass, the copy constructor is skipped
+    cout << "My is " << &my <<endl; 
+}
+```
