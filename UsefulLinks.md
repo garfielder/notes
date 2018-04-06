@@ -56,3 +56,5 @@ https://www.johnlamp.net/cmake-tutorial-1-getting-started.html
 
 Use CN doc: http://sewm.pku.edu.cn/src/paradise/reference/CMake%20Practice.pdf
 
+### Andrew NG  ML 讲义
+http://cs229.stanford.edu/syllabus.html
