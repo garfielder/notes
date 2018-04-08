@@ -58,3 +58,4 @@ Use CN doc: http://sewm.pku.edu.cn/src/paradise/reference/CMake%20Practice.pdf
 
 ### Andrew NG  ML 讲义
 http://cs229.stanford.edu/syllabus.html
+Prove of matrix trace:https://web.stanford.edu/~jduchi/projects/matrix_prop.pdf
