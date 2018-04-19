@@ -199,6 +199,22 @@ int main()
 ```
 ### ```fflush```
 
+### Template Usage
+```c++
+// in header.h
+template<class T>
+void PrintTypeInfo();
+
+
+// In body.cpp
+#include "header.h"
+template<class T>
+void PrintTypeInfo(){
+   // print something relative to type T
+}
+```
+   
+ What's the problem with above implementation
 
 ### enum
 Why we use enum in c++? <br> compare with string. 
