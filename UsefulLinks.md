@@ -50,6 +50,8 @@ Windows short key:
 | windows + shift + N  | Open OneNote |
 | todo  | todo |
 
+win10 引导ubuntu
+https://blog.csdn.net/u014422976/article/details/80393841
 
 ### cmake tutorial 
 https://www.johnlamp.net/cmake-tutorial-1-getting-started.html
@@ -62,3 +64,5 @@ http://cs229.stanford.edu/syllabus.html
 Prove of matrix trace:https://web.stanford.edu/~jduchi/projects/matrix_prop.pdf
 
 softmax details:http://ufldl.stanford.edu/tutorial/supervised/SoftmaxRegression/
+
+
