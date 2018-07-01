@@ -10,6 +10,9 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vn
 
 Notice, the desktop is ```startxfce4 ```
 
+## Install misc
+win10 boot ubuntu
+https://blog.csdn.net/u014422976/article/details/80393841
 
 
 ## Compile Kernel
