@@ -203,7 +203,7 @@ int main()
     https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04
 
 * grep multiple  words
-    * grep  'worda\|wordb'
+    * grep  'worda\\|wordb'
 
 * How switch between different versions of gcc
 
