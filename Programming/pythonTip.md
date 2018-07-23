@@ -214,6 +214,10 @@ See << Python in a NutShell>> for more
 * Class Instance
    * each class instance inhert attribute from class object and has its own namespace
    * assignment of self attribute will generate  the attribute that belongs to the object itself. 
+* C++区别
+C++类和对象有着明确的区分，类是类，对象是对象。 类的属性在编译时确定 。 而python， 类定义后，也是一种类对象，本身的一些attribute和方法， 类的某一实例是类对象的派生对象。 当索引类对象的方法或属性，会依据搜索法则从上一层类对象，父类，祖宗类里面搜索
+
+
 ## Regular experession
 ### `re.sub`
 ```python
