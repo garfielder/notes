@@ -36,6 +36,27 @@ Two ways to fix: <br>
 ## Always print hex
 set output-radix 16 
 
+
+## Define customized command 
+
+The following GDB command defines a customized command named *nf* which is combination of ```next``` and ```frame 0```
+```
+(gdb) define nf
+Redefine command "nf"? (y or n) y
+Type commands for definition of "nf".
+End with a line saying just "end".
+>next
+>frame 0
+>end
+
+``` 
+
+## Links 
+
+Debug an exception :   http://www.sourceware.org/gdb/current/onlinedocs/gdb/Set-Catchpoints.html
+
+
+
 ## Print STL Vector
 blog.csdn.net/fdl19881/article/details/8710636
 
