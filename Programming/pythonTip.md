@@ -144,6 +144,14 @@ value = [9, 10]
 d = dict(zip(key, value))
 ```
 
+Just as the name suggests, zip merges two list into one
+```
+t1 = (a, b, c)
+t2 = (x, y, z)
+zip(t1, t2) = ((a, x), (b, y), (c,z))
+```
+
+
 * enumerate can disintegrate an list into list of （index， data）tupple
 
 
