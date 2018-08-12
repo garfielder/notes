@@ -264,5 +264,11 @@ is_pointer<T>
 
 add_const<X> // try to add const to type X
 ```
+
+## Differences 
+| First | second  | comment|
+|-------|---------|--------|
+|nullptr|NULL||
+
 ## Reference 
 1. <a name=cppbook> The C++ Programming Language. Fourth Edition. </a>
