@@ -268,7 +268,7 @@ add_const<X> // try to add const to type X
 ## Differences 
 | First | second  | comment|
 |-------|---------|--------|
-|nullptr|NULL||
+|nullptr|NULL|nullptr is type-safe, e.g. it cannot be assigned to a int, NULL is 0L in c++ but (void*)0 in C, it leads confusion when overloadded function takes either a pionter or integer |
 
 ## Reference 
 1. <a name=cppbook> The C++ Programming Language. Fourth Edition. </a>
