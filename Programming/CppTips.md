@@ -372,3 +372,13 @@ int main(){
     cout << "My is " << &my <<endl; 
 }
 ```
+## string 
+it is safe to return a c string because string literal is statically allocated 
+
+```c++
+const char* error_message(int i)
+{
+// ...
+return "range error";
+}
+```
