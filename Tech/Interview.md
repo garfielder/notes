@@ -222,3 +222,16 @@ Why we use enum in c++? <br> compare with string.
 If there is a type in enum variable, it is compile-error. If a typo in string, it will be a run-time error and hard to detect.!t
 
 string cannot be use in a ```switch-case```scenario.
+
+### Get number of tailing zeros
+
+```c++
+unsigned  tailing_zeros(unsigned  n)
+{
+	if (n == 0) return sizeof(unsigned) * 8;
+	else {
+		// log2( n & -n)
+		return static_cast<unsigned>(log2(n & static_cast<unsigned>(-static_cast<int>(n))) );
+	}
+}
+```
