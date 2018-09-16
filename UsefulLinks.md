@@ -65,4 +65,4 @@ Prove of matrix trace:https://web.stanford.edu/~jduchi/projects/matrix_prop.pdf
 
 softmax details:http://ufldl.stanford.edu/tutorial/supervised/SoftmaxRegression/
 
-
+SMO algorithm: https://blog.csdn.net/zhuxiaoyang2000/article/details/54234171
