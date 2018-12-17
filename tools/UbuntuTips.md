@@ -210,6 +210,13 @@ int main()
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.3 10<br>
 https://askubuntu.com/questions/26498/choose-gcc-and-g-version<br>
 
+* How to suppress shell output
+
+redirect the output to /dev/null
+```
+echo Hello, you cannot see me >& /dev/null
+```
+
 ## Access control
 
 Access control is to determine which process can access which resource.
