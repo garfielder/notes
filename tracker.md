@@ -1,4 +1,9 @@
 
+# 采购
+1.  可编程机器人，python编程
+2.  科学小制作
+3. 智能插座
+
 # Car
 
 | Name                | Price    |     Pro    | con      | Link |
