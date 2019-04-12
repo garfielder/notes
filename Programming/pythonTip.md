@@ -269,3 +269,7 @@ for dirName, subdirList, fileList in os.walk(rootDir, topdown=False):
  re.sub(pattern, repl, string, count=0, flags=0)
  ```
  
+ ### flags
+ see https://www.tutorialspoint.com/python/python_reg_expressions.htm
+ re.S   dot matches all characters including newline
+ 
