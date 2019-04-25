@@ -26,3 +26,11 @@ using
 
 3l  : move to 3th colomn of current line <br>
 fX  : move to next X
+
+## view and edit binary
+1. Open file in binary mode 
+```vim -b bin_file```
+2. convert the file to hex foramt
+```   :%!xxd ```
+3. Convert it back to binary
+```%!xxd -r```
