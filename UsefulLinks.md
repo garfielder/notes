@@ -53,7 +53,13 @@ Windows short key:
 win10 引导ubuntu
 https://blog.csdn.net/u014422976/article/details/80393841
 
-### cmake tutorial 
+### technique  tutorial 
+| Shot Key  | Function |
+| --------- | -------- |
+| Cmake   | https://www.johnlamp.net/cmake-tutorial-1-getting-started.html |
+| cmake cn  | http://sewm.pku.edu.cn/src/paradise/reference/CMake%20Practice.pdf |
+|rcs tutorial |  http://www.engr.iupui.edu/~dskim/Classes/ECE282/RCS_Tutorial.pdf |
+
 https://www.johnlamp.net/cmake-tutorial-1-getting-started.html
 
 Use CN doc: http://sewm.pku.edu.cn/src/paradise/reference/CMake%20Practice.pdf
