@@ -74,6 +74,7 @@ Uniformed memory access
 http://developer.amd.com/wordpress/media/2012/10/LibNUMA-WP-fv1.pdf)
 
 ![NUMA System](http://cenalulu.github.io/images/linux/numa/numa.png)
+http://cenalulu.github.io/linux/numa/
 
 ## Reference 
 1. Avi Silberschatz. Operating System Concepts. Wiley publishing, Ninth Edition, 2013. 
