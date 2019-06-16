@@ -4,3 +4,7 @@
 
 
 有点像体检， 体检的主体是“我们” ， 本来我们的方法有测血压/查B超/视力/...,  直接把这个方法绑定到体检者对象里，是常规的封装方式。 Visitor方式把这个方法提出来单独成立类，或者说医生，比方说测血压医生/B超医生，让各个医生去访问各个体检人员吧。
+
+
+## offline notes of focade & stragy & bridge
+https://raw.githubusercontent.com/garfielder/notes/master/IMG_20190420_170929.jpg
