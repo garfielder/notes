@@ -7,4 +7,4 @@
 
 
 ## offline notes of focade & stragy & bridge
-https://raw.githubusercontent.com/garfielder/notes/master/IMG_20190420_170929.jpg
+https://raw.githubusercontent.com/garfielder/notes/master/attachment/stragy_bridge.jpg
