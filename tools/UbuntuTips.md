@@ -181,7 +181,8 @@ int main()
 
 * grep multiple  words
     * grep  'worda\\|wordb'
-
+* find files with multiple key words
+    * find . -name "*.h" -o -name "*.cpp"
 * How switch between different versions of gcc
 
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.3 10<br>
