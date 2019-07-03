@@ -299,3 +299,15 @@ Redirect DISPLAY var, and pointing to above display server
 This command shows you the summarized size of hidden directories
 
 ```du -hs .[^.]*```
+
+## Weired character when paste into gnome-terminal 
+"""
+For all having the issue as well and finding this topic through google:
+something has enabled 'bracketed paste mode' on your terminal. gnome-terminal (and based on it terminator) does not handle it currently well, see for example:
+http://www.midnight-commander.org/ticket/3207
+To disable the bracketed paste mode:
+printf "\e[?2004l"
+(from http://cirw.in/blog/bracketed-paste)
+Cures the terminal (gnome-terminal, terminator) immediately for me.
+"""
+https://bbs.archlinux.org/viewtopic.php?id=174595
