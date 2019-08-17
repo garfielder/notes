@@ -9,12 +9,11 @@
    setx PATH "%PATH%;%JAVA_HOME%\bin"
   ```
   * CLASSPATH: make sure class path is included
-    * TODO
+    ```
+    setx CLASSPATH ";%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin"
+    ```
     
-    public class hello{
-    public static void main(String[] args) {
-    System.out.println("Hello World!");
-    }
+
 * Sample
 
  ```java
@@ -25,3 +24,8 @@
 }
  ```
  
+Save it as *hello.java*
+```
+javac hello.java
+java hello
+```
