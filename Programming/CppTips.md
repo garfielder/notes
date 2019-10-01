@@ -8,6 +8,7 @@
 (20191001 from C++ 4rd)_
 
 *Initialization of nonlocal variables*:
+
 global, namespace and class static variables are initialized before main main() is invoked in their defination order. The order are not guaranteed between different compile units.  不要指望不同编译单元的全局变量有什么依赖关系
 
 
