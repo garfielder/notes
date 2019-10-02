@@ -3,7 +3,7 @@
 * download from http://www.oracle.com/technetwork/java/javase/downloads/index.html
 * Install jdk ewe. Notice, jdk and jre directory can be customized 
 * configure enviornment
-  * JAVE_HOME: JDK HOME
+   * Set JAVA_HOME
 ```
 setx JAVA_HOME "C:\dev\Java\jdk-13"  # set jdk home
 ```
