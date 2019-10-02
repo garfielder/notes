@@ -4,10 +4,9 @@
 * Install jdk ewe. Notice, jdk and jre directory can be customized 
 * configure enviornment
    * Set JAVA_HOME
-```
+   ```
 setx JAVA_HOME "C:\dev\Java\jdk-13"  # set jdk home
 ```
-  
   * PATH 
   ```
    setx PATH "%PATH%;%JAVA_HOME%\bin"
