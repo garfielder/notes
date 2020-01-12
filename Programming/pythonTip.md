@@ -1,5 +1,11 @@
 ## Advanced usage of List
 
+### Convertion
+```
+int ("0xaaa", 16)
+iint("18", 10)
+```
+
 ###  List comprehension 
 It comes from concept of set operation in mathmatic.  such as {x * 2 | x in N, x % 2 == 0} <br>
 construct a new list based on existing one.<br>
