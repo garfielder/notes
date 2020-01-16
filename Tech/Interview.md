@@ -235,3 +235,6 @@ unsigned  tailing_zeros(unsigned  n)
 	}
 }
 ```
+
+## 多线程
+Sington再多线程环境需要注意的事项
