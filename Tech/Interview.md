@@ -240,3 +240,7 @@ unsigned  tailing_zeros(unsigned  n)
 Sington再多线程环境需要注意的事项
 
 static is OK becaues it is only intanced by when firstly runnning 
+
+
+两个线程对一个变量操作， 最小值和最大值分别是多少
+
