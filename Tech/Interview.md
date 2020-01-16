@@ -238,3 +238,5 @@ unsigned  tailing_zeros(unsigned  n)
 
 ## 多线程
 Sington再多线程环境需要注意的事项
+
+static is OK becaues it is only intanced by when firstly runnning 
