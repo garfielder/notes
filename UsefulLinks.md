@@ -1,4 +1,10 @@
 ## Useful Links 
+
+
+| Python tutorial |  https://www.runoob.com/python/python-tutorial.html  |
+|---------------------|----------|
+| d   ||
+
 ### ISO CPP 
 <https://github.com/isocpp/CppCoreGuidelines>
 
