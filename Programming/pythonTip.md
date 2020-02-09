@@ -1,9 +1,14 @@
 ## Advanced usage of List
 
+### Format
+[[fill]align][sign][#][0][width][,][.precision][type]
+
+
+https://www.dummies.com/programming/python/how-to-format-strings-in-python/
 ### Convertion
 ```
 int ("0xaaa", 16)
-iint("18", 10)
+int("18", 10)
 ```
 
 ###  List comprehension 
