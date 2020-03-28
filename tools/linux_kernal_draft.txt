@@ -1,0 +1,38 @@
+https://huke88.com/course/17816.html
+简笔画教程
+
+
+$ sudo rm /var/lib/apt/lists/lock
+$ sudo rm /var/cache/apt/archives/lock
+
+1. configurate serial port
+
+https://www.xuebuyuan.com/1889108.html
+
+都是ttyS0
+
+开发机：
+
+sudo chmod 777 /dev/ttyS0 # to make echo workS
+
+
+阿里原快：
+https://blog.csdn.net/baidu_41736913/article/details/97613935
+
+
+http://mitchtech.net/compile-linux-kernel-on-ubuntu-12-04-lts-detailed/
+sudo apt-get install libssl-dev
+
+
+动态增大disk size
+
+
+C:\Users\liyon\VirtualBox VMs\Debug\Dev 副本.vdi
+
+whole flow
+https://blog.csdn.net/qq_29343201/article/details/73909928
+
+
+show or hidden grub menu at bootup 
+
+http://blog.chinaunix.net/uid-26527046-id-3748986.html
