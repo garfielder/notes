@@ -1,4 +1,9 @@
 # GVIM
+
+##  Search for non-ascii character in vim
+
+```[^\x00-\x7f]```
+
 ## replacement
 
 ```tcsh
