@@ -88,6 +88,21 @@ But  the real benefits come in classes with multiple constructors. Often, all co
 	};
 ```
 
+## Constructor Delegation in C++
+One constructor calls another constructor in a class to avoid duplication
+```
+class A
+{
+public:
+    A(int a) {_a = a; assert(a > 3); }
+    A(int a, string b): A(a) {_b = b; assert(b != ""); }
+
+
+    int _a;
+    string _b;
+};
+```
+
 ## Copy and Move
 ```c+
 x= y;
