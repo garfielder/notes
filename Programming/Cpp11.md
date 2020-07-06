@@ -76,6 +76,18 @@ Answer is simple: NO DIFFERENCE <br>
 ```using TestItem = shared_ptr<Base>;``` <br>
 ```typedef shared_ptr<Base> TestItem```
 
+
+## In-class member initializers
+
+But  the real benefits come in classes with multiple constructors. Often, all constructors use a common initializer for a member: 
+```
+	class A {
+	public:
+		A(int x): a(x) {}  // a will override the default value of 7
+		int a = 7;
+	};
+```
+
 ## Copy and Move
 ```c+
 x= y;
