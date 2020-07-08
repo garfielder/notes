@@ -133,6 +133,11 @@ public:
 };
 ```
 
+## rvalue reference
+
+
+https://www.cprogramming.com/c++11/rvalue-references-and-move-semantics-in-c++11.html
+
 ## Copy and Move <a name="CopyandMove"></a>
 ```c+
 x= y;
