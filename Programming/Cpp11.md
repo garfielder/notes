@@ -242,6 +242,34 @@ concept bool EqualityComparable() {
 }
 ```
 
+### Variadic Template  (Paremeter Pack)
+
+
+Functions like printf takes  variable number of variable. e.g.
+```
+int printf ( const char * format, ... );  // ... represents variable arguments.
+```
+variable arguments were processed in run-time. 
+
+C++11 provided variadic template to process  variadic in compile time in a type-safe and clean way. 
+https://eli.thegreenplace.net/2014/variadic-templates-in-c/
+
+Parmeter Pack is a template parameter that takes zero or non-zero non-type, type, template parameters 
+
+```
+template <typename T>
+T Add(T v)
+{
+    return v;
+}
+
+template <typename T ,  typename... Args>   // Args is type template parameter  pack
+T Add(T first, Args... args)   // args is a non-type template parameter pack
+{
+    return first + Add(args...);
+}
+
+```
 
 ## Initialization List  <a name="InitializationList"></a>
 
