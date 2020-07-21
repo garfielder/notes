@@ -395,3 +395,26 @@ const char* error_message(int i)
 return "range error";
 }
 ```
+
+## Polymorphic
+
+多态是个很广泛的概念。 字面意思是表面看起来的相同的事物，因为内部潜在的差异， 而产生的行为不同。 两兄弟，一个喜欢吃甜，一个喜欢吃咸，同时接到一块糖，表现是不一样的。 C++中的多态有很多具体的表现形式：
+
+   * Pointer
+   ```
+   void *p = new int;
+   p = new float; 
+   // p can point to different content although they looks the same 
+   ```
+   * Call back function
+   ```
+   typedef  (void)(*Fun)()
+   vod fun1() { printf("fun1\n"); }
+   vod fun2() { printf("fun2\n"); }
+   
+   p = Fun1;  p();
+   p = Fun2;  p(); 
+  ```
+  * function overload
+  * template
+  * virtual fucntion
