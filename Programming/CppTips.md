@@ -418,3 +418,15 @@ return "range error";
   * function overload
   * template
   * virtual fucntion
+  
+  ## Default Class functions synthesized by compiler
+  
+  Default constructor is generated where it is *need*. 
+  
+  If a class member have default constructor, the class itself will have a default constructor
+  
+  If a base class has default constructor, it derived will have a default constructor
+  
+  If a class has a virtual member in it or in its parent class, it should have a default constructor to construct its vptr
+  
+  Inside_the_C++_Object_Model.pdf: section 2.1
