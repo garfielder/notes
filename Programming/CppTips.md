@@ -1,6 +1,32 @@
-## Callable Target
+## Table of Content
+   1. [ Headers ](#Headers)
+   1. [ Function ](#Function)
+   1. [  Lambda Expression ](#LambdaExpression)
+   1. [ Function Object](#FunctionObject)
+   1. [ Bind Expression](#BindExpression)
+1. [ Involvement of Pogramming Paradigms](#InvolvementofPogrammingParadigms)
+1. [ Shared_ptr](#Shared_ptr)
+1. [ Tips to design a class ](#Tipstodesignaclass)
+1. [ Use const whenever possible](#Useconstwheneverpossible)
+1. [ Initialization ](#Initialization)
+1. [  Constructor ](#Constructor)
+1. [ Not to call virutal function in constructor](#Nottocallvirutalfunctioninconstructor)
+1. [ Copy constructor and assignment](#Copyconstructorandassignment)
+1. [ Reference](#Reference)
+1. [ Runtime typeinfo](#Runtimetypeinfo)
+1. [ STL](#STL)
+1. [ Exception](#Exception)
+   1. [ [Thread Safty](http://www.boost.org/community/exception_safety.html) -- No Memory Leak](#ThreadSaftyhttpwwwboostorgcommunityexception_safetyhtmlNoMemoryLeak)
+   1. [ [The Three Exception Guarantees](http://www.boost.org/community/exception_safety.html)](#TheThreeExceptionGuaranteeshttpwwwboostorgcommunityexception_safetyhtml)
+   1. [ Debug an exception](#Debuganexception)
+1. [ Behind STL container](#BehindSTLcontainer)
+1. [ Copy Elision](#CopyElision)
+1. [ string ](#string)
+1. [ Polymorphic](#Polymorphic)
+1. [ Default Class functions synthesized by compiler](#DefaultClassfunctionssynthesizedbycompiler)
 
-### Headers 
+
+### Headers  <a name="Headers"></a>
 
 *How to determine the number of headers used in a program*:
 1. From the perspective of average user, it should not be too many 
@@ -12,7 +38,7 @@
 global, namespace and class static variables are initialized before main main() is invoked in their defination order. The order are not guaranteed between different compile units.  不要指望不同编译单元的全局变量有什么依赖关系
 
 
-### Function 
+### Function  <a name="Function"></a>
 The most typical form of callable target
 ```
 int fun(int arg1){
@@ -24,17 +50,17 @@ typedef int (*FUNC_TYPE)(int);
 FUNC_TYPE funVar = fun;
 ```
 
-###  Lambda Expression 
+###  Lambda Expression  <a name="LambdaExpression"></a>
 https://github.com/garfielder/notes/blob/master/Programming/Cpp11.md#Lamda
 
-### Function Object
+### Function Object <a name="FunctionObject"></a>
 https://github.com/garfielder/notes/blob/master/Programming/CppTips.md#functionObj
 
-### Bind Expression
+### Bind Expression <a name="BindExpression"></a>
 FIXME: pointing to studio/cpp/boost/main.cpp <br>
 Return a function object based on an existing function or member functions, with argument bound 
 
-## Involvement of Pogramming Paradigms
+## Involvement of Pogramming Paradigms <a name="InvolvementofPogrammingParadigms"></a>
 
 * Procedural Programming
 	* forcus on process  -  the algorithm to perform the desired computation
@@ -56,7 +82,7 @@ Return a function object based on an existing function or member functions, with
 	
 See more in <<The C++ Programming Languages>>
 
-## Shared_ptr
+## Shared_ptr <a name="Shared_ptr"></a>
 put a newed pointer into shared_ptr  in a single sentence.  Otherwise exception would cause memory leak 
 
 
@@ -113,7 +139,7 @@ int main()
     sub(10, 4); 
 }
 ```
-## Tips to design a class 
+## Tips to design a class  <a name="Tipstodesignaclass"></a>
 * DONOT expected to return an reference
 	* It may refer to an local variable, that will be destroied soon
 	* Using  `new`ed objects, it is easily to cause memory leak
@@ -122,7 +148,7 @@ int main()
 	* The more member functions there are, the more functions there will be to access private member of a class
 		* This is bad for encapsulation
 	*  Too member function leads to big dependence for  class customer
-## Use const whenever possible
+## Use const whenever possible <a name="Useconstwheneverpossible"></a>
 
 * Before and Afer pointers
    * `const char* pStr; // pointer to a constant string`
@@ -132,23 +158,23 @@ int main()
       * can change mutual class member ( page 23 of [1])
 * const and non-constant can be overloaded     
       
-## Initialization 
+## Initialization  <a name="Initialization"></a>
 * Initialize a class in initialization list, so it can be done before construcor
 * There is no guratee of initialization sequence of objects in difference compilization unit (different .o or .obj file)
-##  Constructor 
+##  Constructor  <a name="Constructor"></a>
 * C++ compiler create default constuctor/copy constructor/copy assignment/descructord 
 * Sometime need to stop above default member from being called by setting private and not implemented(stop friend class)
 * desctructor should be virutal if a class have virutal members, other wise, delelte the point would only release the base class part.  If no virutal member , it is not supposed to be a base class
 
-## Not to call virutal function in constructor
+## Not to call virutal function in constructor <a name="Nottocallvirutalfunctioninconstructor"></a>
 设想班级管理系统中有学生和班干部类，班干部类派生于学生类。 有一虚函数名为报告身份。 构造班干部时，要先构造学生，换句话，若当干部，先当学生。当学生的过程中，他报告身份，依然是学生，他不知道自己未来变成干部
 
-## Copy constructor and assignment
+## Copy constructor and assignment <a name="Copyconstructorandassignment"></a>
 Copy function should make sure to copy every member including base class part
-## Reference
+## Reference <a name="Reference"></a>
 [1]: Effective C++
 
-## Runtime typeinfo
+## Runtime typeinfo <a name="Runtimetypeinfo"></a>
 ```cpp
 #include <iostream>
 #include <typeinfo>
@@ -169,7 +195,7 @@ int main( void )
 ```
 
 
-## STL
+## STL <a name="STL"></a>
 * iterator
     * It is similar to pointer, which is pointing an objects, can be dereferernced, increase, decresed, comparasion, ...
     * Different type of iterators have different level of functionlity. See [here](http://www.cplusplus.com/reference/iterator/)
@@ -240,7 +266,7 @@ int main()
 }
 ```
 
-## Exception
+## Exception <a name="Exception"></a>
 
 Often, the modules that detects error does not know what action to take. The recovery action  depends on the module that invoked the operation that the module that is performing the operation. \<\<section 2.4.2 of The C++ Programming Language\>\>
 
@@ -255,9 +281,9 @@ Often, the modules that detects error does not know what action to take. The rec
 
 What kinds of objects can be thrown? Any type!  It could be int,string, or user-defined class. There are also some user defined exception object (*FIXME*).  Meanwhile, anyobject can be catched. 
 
-### [Thread Safty](http://www.boost.org/community/exception_safety.html) -- No Memory Leak
+### [Thread Safty](http://www.boost.org/community/exception_safety.html) -- No Memory Leak <a name="ThreadSaftyhttpwwwboostorgcommunityexception_safetyhtmlNoMemoryLeak"></a>
 RAII --> Resource esource Acquisition Is Initialization .  Use shared_ptr when possible. So, resource can be well released even when exception is throw anywhere even in constructor. 
-### [The Three Exception Guarantees](http://www.boost.org/community/exception_safety.html)
+### [The Three Exception Guarantees](http://www.boost.org/community/exception_safety.html) <a name="TheThreeExceptionGuaranteeshttpwwwboostorgcommunityexception_safetyhtml"></a>
 * No-fail guarantee 
 	* The user can guratee  the function won't through an exception or can eat all internal exceptions.
 * Strong guarantee
@@ -266,7 +292,7 @@ RAII --> Resource esource Acquisition Is Initialization .  Use shared_ptr when p
 * Basic Guarantee
 	* When exception happens, no memory leaked and the object is still in a usable state. 
 
-### Debug an exception
+### Debug an exception <a name="Debuganexception"></a>
 
 http://www.sourceware.org/gdb/current/onlinedocs/gdb/Set-Catchpoints.html
 
@@ -341,7 +367,7 @@ int main()
 }
 ~           
 ```
-## Behind STL container
+## Behind STL container <a name="BehindSTLcontainer"></a>
 
 *std::vector* :  actually an array. And we can get the  address iTH elements by ```&vec[0] + i * sizeof(elem)```
 
@@ -351,7 +377,7 @@ int main()
 
 *std::unordered_set*:  implemented by hash table,  can be indexed by their value.  The find and insert can be done with O(1) .
 
-## Copy Elision
+## Copy Elision <a name="CopyElision"></a>
 ```c++
 /* atexit example */
 
@@ -385,7 +411,7 @@ int main(){
     cout << "My is " << &my <<endl; 
 }
 ```
-## string 
+## string  <a name="string"></a>
 it is safe to return a c string because string literal is statically allocated 
 
 ```c++
@@ -396,7 +422,7 @@ return "range error";
 }
 ```
 
-## Polymorphic
+## Polymorphic <a name="Polymorphic"></a>
 
 多态是个很广泛的概念。 字面意思是表面看起来的相同的事物，因为内部潜在的差异， 而产生的行为不同。 两兄弟，一个喜欢吃甜，一个喜欢吃咸，同时接到一块糖，表现是不一样的。 C++中的多态有很多具体的表现形式：
 
@@ -419,7 +445,7 @@ return "range error";
   * template
   * virtual fucntion
   
-  ## Default Class functions synthesized by compiler
+## Default Class functions synthesized by compiler <a name="DefaultClassfunctionssynthesizedbycompiler"></a>
   
   Default constructor is generated where it is *need*. 
   
