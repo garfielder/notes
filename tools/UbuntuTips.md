@@ -57,7 +57,7 @@ sudo apt-get install --reinstall bcmwl-kernel-source
 |---------------------|----------|------------|----------|
 | Check out worksapce | p4 sync  |  git clone <depot_link> |  Perforce needs P4CLIENT & P4PORT   |
 | Add a file          | p4 add   | git add||
-| update workspace |  p4 sync | git pull |  git would update both local repo and work copy|
+| update workspace |  p4 sync | git pull (git pull origin master)|  git would update both local repo and work copy|
 | update a file or files | p4 sync file/files| no single command | |
 |edit a file | p4 edit file/files | git add <modified_files>; git comment -a -m "message" | git add then commit |
 |Move a file | p4 delete file; p4 add <other_dir>/file|git mv file \<other_dir\>||
