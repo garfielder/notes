@@ -447,7 +447,8 @@ return "range error";
   
 ## Default Class functions synthesized by compiler <a name="DefaultClassfunctionssynthesizedbycompiler"></a>
   
-  Default constructor is generated where it is *need*. 
+  A trival constructor initiaze does not initialize any class member
+  A default constructor is non-trival in the following case: 
   
   If a class member have default constructor, the class itself will have a default constructor
   
@@ -456,3 +457,6 @@ return "range error";
   If a class has a virtual member in it or in its parent class, it should have a default constructor to construct its vptr
   
   Inside_the_C++_Object_Model.pdf: section 2.1
+  
+  ## C++ memory layout 
+  T
