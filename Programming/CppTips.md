@@ -459,4 +459,23 @@ return "range error";
   Inside_the_C++_Object_Model.pdf: section 2.1
   
   ## C++ memory layout 
-  T
+  ```
+  class A
+  { public:
+      A()
+
+       int s;
+  };
+A::s = 2;
+
+int main()
+{
+ 	A a;
+	A* pa = &a;
+	a.s = 3;
+	pa->s = 4;
+}
+```
+A::s_memeber is unqiue for all class objects and stored in data segment. 
+a.s and pa.s are identical in compiler. They access the static variabeble in data segment directly
+
