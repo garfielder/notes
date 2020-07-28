@@ -5,6 +5,9 @@ https://hotels.ctrip.com/hotel/987432.html?isFull=F&masterhotelid=987432&hcityid
 如家精选酒店(杭州西湖吴山广场河坊街店) 
 https://hotels.ctrip.com/hotel/427907.html?isFull=F&masterhotelid=427907&hcityid=17#ctm_ref=hod_sr_lst_dl_n_1_5
 
+如家精选酒店(杭州西湖音乐喷泉店) H
+https://hotels.ctrip.com/hotel/50128924.html
+
 # 采购
 1.  可编程机器人，python编程
 2.  科学小制作
