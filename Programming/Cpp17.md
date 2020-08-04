@@ -1,9 +1,9 @@
 # C++17 Notes
 * Write compact and concise code
 
-##  Structure binding
+##  Structured Binding
 
-We can do this in python:
+We can multiple returned from an expression in pythons:
 
 ```python
 def fun():
@@ -11,6 +11,14 @@ def fun():
 
 a, b = fun();
 ```
+Now, we can also do this with C++17.
+
+```c++
+std::pair a(1, 1.2f); // audo 
+audo [x, y] = a;
+```
+
+The returned value can come from tuple/arry/struct
 
 ## Links
    * https://www.cppindetail.com/data/cpp17indetail-sample.pdf
