@@ -1,7 +1,7 @@
----+ C++17 Notes
+# C++17 Notes
 * Write compact and concise code
 
----++  Structure binding
+##  Structure binding
 
 We can do this in python:
 
@@ -12,5 +12,5 @@ def fun():
 a, b = fun();
 ```
 
-++ Links
+## Links
    * https://www.cppindetail.com/data/cpp17indetail-sample.pdf
