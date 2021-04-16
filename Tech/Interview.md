@@ -259,3 +259,7 @@ static is OK becaues it is only intanced by when firstly runnning
       * 流程
 
 
+
+*其他考虑点* <br>
+   * 判断Candidate 真正做了哪些事情
+   * 主要精力花在了什么上
