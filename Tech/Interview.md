@@ -244,3 +244,18 @@ static is OK becaues it is only intanced by when firstly runnning
 
 两个线程对一个变量操作， 最小值和最大值分别是多少
 
+
+## 工作能力
+   * 理解 - 需求分析
+      * 获取需求
+      * 沟通需求
+   * 评估 - 可行性研究
+      * 衡量难度
+      * 可行性
+      * 做的理由，不做的理由
+   * 执行
+      * 克服困难
+   * 改进
+      * 流程
+
+
