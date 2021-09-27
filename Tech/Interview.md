@@ -155,7 +155,7 @@ clean:
 ```
 ### find function implementation
 
-We always declear  a class header in a .h/.hpp file,  and define in a .cpp.  For a cpp file it looks like:
+We always declare  a class header in a .h/.hpp file,  and define in a .cpp.  For a cpp file it looks like:
 
 ```c++
 void MyClass::Fun1(){
