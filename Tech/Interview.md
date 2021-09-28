@@ -258,6 +258,20 @@ unsigned  tailing_zeros(unsigned  n)
 }
 ```
 
+## Data structure
+
+1. Merge two linked list 
+
+```c
+typedef stuct Node {
+	int data;
+	struct Node* next;
+} Node;
+
+Node* MergeSortedList(Node* link1, Node* link2)
+```
+
+
 ## 计算机体系结构
 * 负数，浮点数的表达
 * cache的原理
