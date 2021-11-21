@@ -22,7 +22,9 @@
 
 
 ## C++ 
-### C++ Misc
+### C++ basic
+* Describe class constructor and types of constructors
+   * copy constructor, default constructor, copy assignment operator
 * What happens for a private desctructor 
     * can only be ```new```ed without free
 
@@ -270,7 +272,9 @@ typedef stuct Node {
 
 Node* MergeSortedList(Node* link1, Node* link2)
 ```
-
+## 编译原理
+ * 堆和栈区别
+ * 编译一个C/C++程序具体做了哪些事情
 
 ## 计算机体系结构
 * 负数，浮点数的表达
