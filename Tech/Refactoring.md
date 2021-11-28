@@ -14,3 +14,7 @@
 ## 有限test下的重构 
 由于测试资源不宜获取，只能进行有限的测试，这种情况西下，应该只保留最基本的逻辑在 HAL实现层
 
+## Short Tips
+   * Do not do two irrelevant in the same loop
+      * Split them into two.  Performance is usually not a problem. 
+
