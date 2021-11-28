@@ -4,7 +4,7 @@
  Do you try to encapsulate everything, trust the user.  Encapsulating too much can make the design more complex. 
  
  ## Do not over refactoring 
- Do know plan too much on what might be used in the future.
+ Do not  plan too much on what might be used in the future.
 
 
 
@@ -16,5 +16,7 @@
 
 ## Short Tips
    * Do not do two irrelevant tasks in the same loop
-      * Split them into two.  Performance is usually not a problem. 
+      * Split them into two.  Performance is usually not a problem
+   * 如果一个类成员可以从其他成员推到出来，那么没必要保留这个成员
+      * Replace Derived Varible with Query
 
