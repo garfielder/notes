@@ -74,3 +74,11 @@ People uses cocurrency for separation of concerns(separation of independent func
 
 ## TODO
 What is inside mutex/condition_variable in c++11, compared with pthread
+
+## Tips for multi-thread programming 
+1. A mutex may requires an OS context switch and the cost can be much higher than having no lock.
+2. Only lock where threads can overlap
+3. 
+
+
+https://stackoverflow.com/questions/1277627/overhead-of-pthread-mutexes
