@@ -2,6 +2,7 @@
 |---------------|--------|
 |Adding breakpoint| bu  prioritybooster!driverentry|
 |delete brekapint | bc 0|
+|Adding symbol path | .sympath <path_of_pdb_file> | 
 
 
 
