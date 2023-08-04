@@ -62,7 +62,7 @@ sudo apt-get install --reinstall bcmwl-kernel-source
 |edit a file | p4 edit file/files | git add <modified_files>; git comment -a -m "message" | git add then commit |
 |Move a file | p4 delete file; p4 add <other_dir>/file|git mv file \<other_dir\>||
 |submit  to remove depot| p4 submit | git add <fpath>; git comment *; git push -u origin master| |
-| revert everyting| p4 revert ...| git reset --hard ||
+| revert everyting| p4 revert ...| git reset --hard | [More info](https://www.git-tower.com/learn/git/faq/restoring-deleted-files/) |
 | revert one file (unstaged)| p4 checkout <file_name> | git reset <file_name> ||
 |check opened files | p4 opened ... | git status||
 
