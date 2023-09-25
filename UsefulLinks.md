@@ -4,6 +4,7 @@
 | Python tutorial |  https://www.runoob.com/python/python-tutorial.html  |
 |---------------------|----------|
 |conan    |https://blog.csdn.net/Op_chaos/article/details/120726279|
+|c++ new features| https://github.com/AnthonyCalandra/modern-cpp-features#class-template-argument-deduction|
 
 ### ISO CPP 
 <https://github.com/isocpp/CppCoreGuidelines>
