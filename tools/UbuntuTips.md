@@ -33,6 +33,8 @@ wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.11.tar.xz
    2. cp -vi /boot/config-`uname-r`  .config  // reuse curernt configure file
    3. make oldconfig ; //  parse .config, need to select feature, press enter if unsure
    4. make -j4
+   5. sudo make modules_install
+   6. sudo make install
 
 ## Remove 4MB limitation of dma_alloc_coherent
 https://stackoverflow.com/questions/56508117/how-to-allocate-large-contiguous-memory-regions-in-linux
