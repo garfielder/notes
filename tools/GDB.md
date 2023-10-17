@@ -1,5 +1,9 @@
 # GDB 
 
+gdb) x /16xw   <addr or variable>
+
+## Exame memory content 
+
 ## use GDB server to debug program remotely 
 
 Suppose:  <br>
