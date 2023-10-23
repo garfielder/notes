@@ -318,3 +318,11 @@ printf "\e[?2004l"
 Cures the terminal (gnome-terminal, terminator) immediately for me.
 """
 https://bbs.archlinux.org/viewtopic.php?id=174595
+
+
+## Access U-DISK
+1. Plug in the device
+2. lsblk # find the device. Naming is /dev/sdXY
+3. udisksctl mount -b /dev/sdXY # The mount folder will be reported back
+
+https://askubuntu.com/questions/802672/how-to-properly-copy-files-from-hard-drive-to-usb-flash-drive-in-tty4-terminal
