@@ -330,4 +330,4 @@ https://askubuntu.com/questions/802672/how-to-properly-copy-files-from-hard-driv
 ## Kill a process that is bound to port 
 1. find the port being use
    1. cat /etc/services | grep 5555 
-   2. fuser -kill 5555/tcp 
+   2. fuser -k  5555/tcp 
