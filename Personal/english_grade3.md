@@ -1,5 +1,9 @@
 # English_grade3_week5
 
+## 把下列汉语词汇或句子翻译成英语
+
+游泳__________      他的鼻子大。___________________________
+
 ##  正确抄写下面的句子
 1. is he your teacher jill     no he isn't
 
@@ -40,4 +44,27 @@ ____________________________________________________________
 
 ## 选出发音不同的词
 
-（     ） 1. A. H<ins>ow</ins> 
+（     ） 1. A. H<ins>ow</ins>   B. b<ins>ow</ins>      C. blow   D. cow
+
+(       ) 2. A. <ins>or</ins>ange           B. sh<ins>or</ins>t    C.h<ins>or</ins>se  D. <ins>or</ins>
+
+## 用所给单词的正确形式填空
+
+1. ----- What  ____ (be) your friend's name ? ----______ (he) name is Ken
+2. She can _________ (sing).
+
+## 读一读，完成句子，首字母已经给出
+1. Ben h_____ seven blue pens.  The pens are f_____ his teacher.
+
+## 按要求改写句子
+1. My friend is <ins> Jane </ins>. (对划线部分提问）
+
+_____________________________________
+
+2. The tall girl is <ins> ten </ins>. (对划线部分提问）
+
+——————————————————————————————————————————————————
+3. Lisa can dance. Lisa can't swim. (两句合成一句）
+
+————————————————————————————————————————————————————————————————
+
