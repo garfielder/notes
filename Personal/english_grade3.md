@@ -12,13 +12,16 @@
 
 ## 按要求写单词
 1. isn't (完整形式）____________
+   
 2. are not (缩写）______________
 
 ## 选择最恰当的答案
 （     ） 1. Look at the boy. _____  my friend
+
   A. She's   B. His C  He's 
 
   (     ) 2. Alice is my friend. She can ____. 
+  
   A. swims  B. swim  c. swimming
 
 
@@ -53,7 +56,8 @@
 ## 用所给单词的正确形式填空
 
 1. ----- What  ____ (be) your friend's name ? ----______ (he) name is Ken
-2. She can _________ (sing).
+   
+3. She can _________ (sing).
 
 ## 读一读，完成句子，首字母已经给出
 1. Ben h_____ seven blue pens.  The pens are f_____ his teacher.
