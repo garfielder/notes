@@ -18,11 +18,11 @@
 ## 选择最恰当的答案
 （     ） 1. Look at the boy. _____  my friend
 
-  A. She's   B. His C  He's 
+  A. She's      B. His    C.  He's 
 
   (     ) 2. Alice is my friend. She can ____. 
   
-  A. swims  B. swim  c. swimming
+  A. swims     B. swim     c. swimming
 
 
 ## 写出下面句子的一般疑问句
