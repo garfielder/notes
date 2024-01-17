@@ -71,6 +71,8 @@ sudo apt-get install --reinstall bcmwl-kernel-source
 | revert everyting| p4 revert ...| git reset --hard | [More info](https://www.git-tower.com/learn/git/faq/restoring-deleted-files/) |
 | revert one file (unstaged)| p4 checkout <file_name> | git reset <file_name> ||
 |check opened files | p4 opened ... | git status||
+| view a revision | p4 describe <cl> | git view <commit_hash>| |
+| 
 
 ## Kernel
 
