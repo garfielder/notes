@@ -73,6 +73,7 @@ sudo apt-get install --reinstall bcmwl-kernel-source
 |check opened files | p4 opened ... | git status||
 | view a revision | p4 describe <cl> | git view <commit_hash>| |
 | Find local change | p4 file <local_file_path> | git difftool -q --tool=tkdiff <local_file_name>|
+| diff with tkdiff | setenv P4DIFF tkdiff; p4 diff <file_name> |  git difftool -yx tkdiff @ -- <file_name> | 
 
 ## Kernel
 
