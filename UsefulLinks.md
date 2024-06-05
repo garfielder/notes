@@ -72,7 +72,9 @@ https://www.johnlamp.net/cmake-tutorial-1-getting-started.html
 Use CN doc: http://sewm.pku.edu.cn/src/paradise/reference/CMake%20Practice.pdf
 
 ### Andrew NG  ML 讲义
-http://cs229.stanford.edu/syllabus.html
+mainnote: https://cs229.stanford.edu/main_notes.pdf
+
+slides: https://cs229.stanford.edu/syllabus-spring2021.html
 
 Prove of matrix trace:https://web.stanford.edu/~jduchi/projects/matrix_prop.pdf
 
